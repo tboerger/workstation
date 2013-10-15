@@ -1,0 +1,7 @@
+{
+  "run_list": [
+  ],
+  "hostname": {
+    "fqdn": "mimir.suse.de"
+  }
+}

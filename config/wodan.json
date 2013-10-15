@@ -1,0 +1,7 @@
+{
+  "run_list": [
+  ],
+  "hostname": {
+    "fqdn": "wodan.webhippie.de"
+  }
+}
