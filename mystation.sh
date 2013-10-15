@@ -14,7 +14,13 @@ fi
 
 HOST=`hostname`
 NODE=$(cut -d '.' -f 1 <<< $HOST)
-ROOT=$(dirname $0)
+
+if [ -L $0 ]
+then
+  ROOT=$(dirname $(readlink $0))
+else
+  ROOT=$(dirname $0)
+fi
 
 while [ ! -f ${ROOT}/config/${NODE}.json ]
 do
