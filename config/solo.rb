@@ -20,4 +20,4 @@ cache_options({
   skip_expires: true
 })
 
-log_level :debug
+log_level (ENV['LOG_LEVEL'] || "debug").to_sym

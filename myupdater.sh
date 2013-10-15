@@ -36,15 +36,17 @@ if [ -f /usr/bin/sw_vers ]; then
 fi
 
 if [ -d /opt/workstation ]; then
-  cd /opt/workstation && git stash && git pull --force
+  cd /opt/workstation && git stash && git pull --force && git submodule update --init --recursive
 else
   git clone https://github.com/tboerger/workstation.git /opt/workstation
+  cd /opt/workstation && git submodule update --init --recursive
 fi
 
 if [ -d /opt/workstation/cookbooks ]; then
-  cd /opt/workstation/cookbooks && git stash && git pull --force
+  cd /opt/workstation/cookbooks && git stash && git pull --force && git submodule update --init --recursive
 else
   git clone https://github.com/tboerger/cookbooks.git /opt/workstation/cookbooks
+  cd /opt/workstation/cookbooks && git submodule update --init --recursive
 fi
 
 ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
