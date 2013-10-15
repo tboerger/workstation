@@ -36,7 +36,7 @@ if [ -f /usr/bin/sw_vers ]; then
 fi
 
 if [ -d /opt/workstation ]; then
-  cd /opt/workstation && git pull --force
+  cd /opt/workstation && git stash && git pull --force
 else
   git clone https://github.com/tboerger/workstation.git /opt/workstation
 fi
