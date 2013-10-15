@@ -1,6 +1,3 @@
 [submodule "vendor/chef-solo-search"]
 	path = vendor/chef-solo-search
 	url = https://github.com/edelight/chef-solo-search.git
-[submodule "vendor/chef_handler"]
-	path = vendor/chef_handler
-	url = https://github.com/opscode-cookbooks/chef_handler.git
