@@ -31,5 +31,4 @@ do
   read NODE
 done
 
-
 chef-solo -c ${ROOT}/config/solo.rb -j ${ROOT}/config/${NODE}.json -N ${NODE}
