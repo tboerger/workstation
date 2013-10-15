@@ -11,6 +11,7 @@ if [ $EUID -ne 0 ]; then
 fi
 
 echo "Installing workstation..."
+echo
 
 if [ -f /etc/SuSE-release ]; then
   if [ ! -f /usr/bin/chef-client ]; then
@@ -42,5 +43,6 @@ fi
 
 ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
 
+echo
 echo "...done!"
 echo "You can provision the workstation with: /usr/local/bin/mystation"
