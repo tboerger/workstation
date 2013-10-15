@@ -40,5 +40,7 @@ else
   git clone https://github.com/tboerger/workstation.git /opt/workstation
 fi
 
+ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
+
 echo "...done!"
-echo "You can provision the workstation with: bash /opt/workstation/mystation"
+echo "You can provision the workstation with: /usr/local/bin/mystation"
