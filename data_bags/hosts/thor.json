@@ -1,0 +1,10 @@
+{
+  "id": "thor",
+  "fqdn": "thor.suse.de",
+  "ipaddress": "",
+  "aliases": [
+    "thor"
+  ],
+  "available": [
+  ]
+}

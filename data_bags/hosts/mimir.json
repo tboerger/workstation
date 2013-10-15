@@ -1,0 +1,10 @@
+{
+  "id": "mimir",
+  "fqdn": "mimir.suse.de",
+  "ipaddress": "",
+  "aliases": [
+    "mimir"
+  ],
+  "available": [
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "run_list": [
+    "role[basics]"
   ],
   "hostname": {
     "fqdn": "wodan.webhippie.de"
