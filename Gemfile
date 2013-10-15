@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-gem 'berkshelf'
-gem 'rake'
-gem 'knife-solo'
-gem 'serverspec', '~> 0.6.30'

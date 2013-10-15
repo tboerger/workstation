@@ -10,7 +10,7 @@ if [ $EUID -ne 0 ]; then
   fi
 fi
 
-echo "Installing workstation..."
+echo "Initalizing workstation..."
 echo
 
 if [ -f /etc/SuSE-release ]; then
@@ -18,7 +18,7 @@ if [ -f /etc/SuSE-release ]; then
     sudo rpm -Uvh https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.6.2-1.el6.x86_64.rpm
   fi
 
-  zypper in git-core
+  [[ ! -f /usr/bin/git ]] && zypper in git-core
 fi
 
 if [ -f /etc/debian_version ]; then
@@ -26,7 +26,7 @@ if [ -f /etc/debian_version ]; then
     curl -L https://www.opscode.com/chef/install.sh | bash
   fi
 
-  aptitude install git-core
+  [[ ! -f /usr/bin/git ]] && aptitude install git-core
 fi
 
 if [ -f /usr/bin/sw_vers ]; then
@@ -41,7 +41,14 @@ else
   git clone https://github.com/tboerger/workstation.git /opt/workstation
 fi
 
+if [ -d /opt/workstation/cookbooks ]; then
+  cd /opt/workstation/cookbooks && git stash && git pull --force
+else
+  git clone https://github.com/tboerger/cookbooks.git /opt/workstation/cookbooks
+fi
+
 ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
+ln -sf /opt/workstation/myupdater.sh /usr/local/bin/myupdater
 
 echo
 echo "...done!"
