@@ -3,13 +3,28 @@ description "Basics role"
 
 run_list(
   "role[vendor]",
-  "recipe[locate]",
+  "recipe[account]",
+  "recipe[hosts]",
+  "recipe[locales]",
+  "recipe[timezone]",
+  "recipe[sshkey]",
+  "recipe[users]",
   "recipe[git]",
   "recipe[subversion]",
+  "recipe[ruby]",
+  "recipe[homesick]"
   "recipe[htop]",
   "recipe[screen]",
   "recipe[vim]",
   "recipe[nano]"
+  "recipe[locate]",
+  "recipe[cronlist]",
+  "recipe[sqlite]",
+  "recipe[sudo]"
+  "recipe[ntp]",
+  "recipe[openssh]",
+  "recipe[vnstat]",
+  "recipe[readline]",
 )
 
 default_attributes({})

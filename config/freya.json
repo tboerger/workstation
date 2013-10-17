@@ -5,9 +5,16 @@
     "recipe[suse]",
     "recipe[icecream]",
     "recipe[irssi]",
-    "recipe[sqlite]"
+    "recipe[java]",
+    "recipe[bitlbee]",
+    "recipe[virtualbox]",
+    "recipe[vagrant]",
+    "recipe[sublime]",
+    "recipe[rubymine]",
+    "recipe[pine]",
+    "recipe[skype]"
   ],
-  "hostname": {
+  "hosts": {
     "fqdn": "freya.suse.de"
   }
 }

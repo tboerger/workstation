@@ -2,7 +2,7 @@
   "run_list": [
 
   ],
-  "hostname": {
+  "hosts": {
     "fqdn": "thor.webhippie.de"
   }
 }
