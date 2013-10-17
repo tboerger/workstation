@@ -4,7 +4,8 @@
     "recipe[chrome]",
     "recipe[suse]",
     "recipe[icecream]",
-    "recipe[irssi]"
+    "recipe[irssi]",
+    "recipe[sqlite]"
   ],
   "hostname": {
     "fqdn": "mimir.suse.de"
