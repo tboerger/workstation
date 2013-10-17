@@ -8,7 +8,8 @@ run_list(
   "recipe[subversion]",
   "recipe[htop]",
   "recipe[screen]",
-  "recipe[vim]"
+  "recipe[vim]",
+  "recipe[nano]"
 )
 
 default_attributes({})
