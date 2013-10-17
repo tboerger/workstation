@@ -3,7 +3,8 @@
     "role[basics]",
     "recipe[chrome]",
     "recipe[suse]",
-    "recipe[icecream]"
+    "recipe[icecream]",
+    "recipe[irssi]"
   ],
   "hostname": {
     "fqdn": "freya.suse.de"

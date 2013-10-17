@@ -3,7 +3,11 @@ description "Basics role"
 
 run_list(
   "role[vendor]",
-  "recipe[locate]"
+  "recipe[locate]",
+  "recipe[git]",
+  "recipe[htop]",
+  "recipe[screen]",
+  "recipe[vim]"
 )
 
 default_attributes({})
