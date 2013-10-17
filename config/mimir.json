@@ -1,8 +1,9 @@
 {
   "run_list": [
     "role[basics]",
+    "recipe[chrome]",
     "recipe[suse]",
-    "recipe[kde]"
+    "recipe[icecream]"
   ],
   "hostname": {
     "fqdn": "mimir.suse.de"
