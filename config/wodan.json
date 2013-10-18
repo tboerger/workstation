@@ -2,7 +2,5 @@
   "run_list": [
 
   ],
-  "hosts": {
-    "fqdn": "wodan.webhippie.de"
-  }
+  "fqdn": "wodan.webhippie.de"
 }

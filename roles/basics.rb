@@ -3,7 +3,6 @@ description "Basics role"
 
 run_list(
   "role[vendor]",
-  "recipe[account]",
   "recipe[hosts]",
   "recipe[locales]",
   "recipe[timezone]",
@@ -23,8 +22,7 @@ run_list(
   "recipe[sudo]"
   "recipe[ntp]",
   "recipe[openssh]",
-  "recipe[vnstat]",
-  "recipe[readline]",
+  "recipe[readline]"
 )
 
 default_attributes({})

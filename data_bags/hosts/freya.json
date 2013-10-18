@@ -1,10 +1,11 @@
 {
   "id": "freya",
   "fqdn": "freya.suse.de",
-  "ipaddress": "",
+  "ipaddress": "10.120.4.59",
   "aliases": [
     "freya"
   ],
   "available": [
+    "mimir.suse.de"
   ]
 }

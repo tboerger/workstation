@@ -1,10 +1,11 @@
 {
   "id": "wodan",
-  "fqdn": "wodan.suse.de",
+  "fqdn": "wodan.webhippie.de",
   "ipaddress": "",
   "aliases": [
     "wodan"
   ],
   "available": [
+    "thor.webhippie.de"
   ]
 }

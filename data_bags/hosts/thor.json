@@ -1,10 +1,11 @@
 {
   "id": "thor",
-  "fqdn": "thor.suse.de",
+  "fqdn": "thor.webhippie.de",
   "ipaddress": "",
   "aliases": [
     "thor"
   ],
   "available": [
+    "wodan.webhippie.de"
   ]
 }

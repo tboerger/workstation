@@ -1,11 +1,10 @@
 {
   "run_list": [
     "role[basics]",
-    "recipe[chrome]",
     "recipe[suse]",
     "recipe[icecream]",
+    "recipe[chrome]",
     "recipe[irssi]",
-    "recipe[java]",
     "recipe[bitlbee]",
     "recipe[virtualbox]",
     "recipe[vagrant]",
@@ -14,7 +13,14 @@
     "recipe[pine]",
     "recipe[skype]"
   ],
-  "hosts": {
-    "fqdn": "freya.suse.de"
-  }
+  "fqdn": "freya.suse.de",
+  "hosts": [
+    {
+      "ipaddress": "10.120.5.40",
+      "fqdn": "mimir.suse.de",
+      "aliases": [
+        "mimir"
+      ]
+    }
+  ]
 }

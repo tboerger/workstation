@@ -2,7 +2,5 @@
   "run_list": [
 
   ],
-  "hosts": {
-    "fqdn": "thor.webhippie.de"
-  }
+  "fqdn": "thor.webhippie.de"
 }
