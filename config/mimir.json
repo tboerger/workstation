@@ -4,7 +4,8 @@
     "recipe[suse]",
     "recipe[icecream]",
     "recipe[chrome]",
-    "recipe[irssi]"
+    "recipe[irssi]",
+    "recipe[bitlbee]"
   ],
   "fqdn": "mimir.suse.de",
   "hosts": {
@@ -17,5 +18,10 @@
         ]
       }
     ]
+  },
+  "bitlbee": {
+    "daemon_interface": "127.0.0.1",
+    "auth_password": "md5:HuM8CpoFzNWYYeiTK5m8Mpgq",
+    "oper_password": "md5:HuM8CpoFzNWYYeiTK5m8Mpgq"
   }
 }
