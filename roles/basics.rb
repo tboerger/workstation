@@ -7,19 +7,18 @@ run_list(
   "recipe[locales]",
   "recipe[timezone]",
   "recipe[sshkey]",
-  "recipe[users]",
   "recipe[git]",
   "recipe[subversion]",
   "recipe[ruby]",
-  "recipe[homesick]"
+  "recipe[homesick]",
   "recipe[htop]",
   "recipe[screen]",
   "recipe[vim]",
-  "recipe[nano]"
+  "recipe[nano]",
   "recipe[locate]",
   "recipe[cronlist]",
   "recipe[sqlite]",
-  "recipe[sudo]"
+  "recipe[sudo]",
   "recipe[ntp]",
   "recipe[openssh]",
   "recipe[readline]"
