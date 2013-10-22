@@ -8,7 +8,9 @@
     "recipe[bitlbee]",
     "recipe[libvirt]",
     "recipe[vagrant]",
-    "recipe[skype]"
+    "recipe[skype]",
+    "recipe[sublime]",
+    "recipe[rubymine]"
   ],
   "fqdn": "freya.suse.de",
   "hosts": {
