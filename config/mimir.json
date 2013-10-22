@@ -5,7 +5,9 @@
     "recipe[icecream]",
     "recipe[chrome]",
     "recipe[irssi]",
-    "recipe[bitlbee]"
+    "recipe[bitlbee]",
+    "recipe[libvirt]",
+    "recipe[vagrant]"
   ],
   "fqdn": "mimir.suse.de",
   "hosts": {
