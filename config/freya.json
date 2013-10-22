@@ -10,7 +10,8 @@
     "recipe[vagrant]",
     "recipe[skype]",
     "recipe[sublime]",
-    "recipe[rubymine]"
+    "recipe[rubymine]",
+    "recipe[kvm]"
   ],
   "fqdn": "freya.suse.de",
   "hosts": {
