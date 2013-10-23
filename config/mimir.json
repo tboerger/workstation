@@ -14,17 +14,6 @@
     "recipe[kvm]"
   ],
   "fqdn": "mimir.suse.de",
-  "hosts": {
-    "entries": [
-      {
-        "ipaddress": "10.120.4.59",
-        "fqdn": "freya.suse.de",
-        "aliases": [
-          "freya"
-        ]
-      }
-    ]
-  },
   "bitlbee": {
     "daemon_interface": "127.0.0.1",
     "auth_password": "md5:HuM8CpoFzNWYYeiTK5m8Mpgq",
