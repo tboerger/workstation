@@ -5,7 +5,7 @@
     "recipe[icecream]",
     "recipe[chrome]",
     "recipe[irssi]",
-    "recipe[bitlbee]",
+    "recipe[centerim]",
     "recipe[libvirt]",
     "recipe[vagrant]",
     "recipe[skype]",
