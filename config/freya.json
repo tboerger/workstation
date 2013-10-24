@@ -6,6 +6,7 @@
     "recipe[chrome]",
     "recipe[irssi]",
     "recipe[centerim]",
+    "recipe[osc]",
     "recipe[libvirt]",
     "recipe[vagrant]",
     "recipe[skype]",

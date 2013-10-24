@@ -5,6 +5,7 @@
     "recipe[icecream]",
     "recipe[chrome]",
     "recipe[irssi]",
+    "recipe[osc]",
     "recipe[centerim]",
     "recipe[libvirt]",
     "recipe[vagrant]",
