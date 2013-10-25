@@ -12,7 +12,8 @@
     "recipe[skype]",
     "recipe[sublime]",
     "recipe[rubymine]",
-    "recipe[kvm]"
+    "recipe[kvm]",
+    "recipe[kfilebox]"
   ],
   "fqdn": "freya.suse.de",
   "bitlbee": {
