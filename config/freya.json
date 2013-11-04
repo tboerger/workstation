@@ -15,10 +15,5 @@
     "recipe[kvm]",
     "recipe[kfilebox]"
   ],
-  "fqdn": "freya.suse.de",
-  "bitlbee": {
-    "daemon_interface": "127.0.0.1",
-    "auth_password": "md5:HuM8CpoFzNWYYeiTK5m8Mpgq",
-    "oper_password": "md5:HuM8CpoFzNWYYeiTK5m8Mpgq"
-  }
+  "fqdn": "freya.suse.de"
 }
