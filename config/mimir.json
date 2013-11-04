@@ -15,5 +15,12 @@
     "recipe[kvm]",
     "recipe[kfilebox]"
   ],
-  "fqdn": "mimir.suse.de"
+  "fqdn": "mimir.suse.de",
+  "kvm": {
+    "host": {
+      "kernel_modules": [
+        "kvm"
+      ]
+    }
+  }
 }

@@ -15,5 +15,12 @@
     "recipe[kvm]",
     "recipe[kfilebox]"
   ],
-  "fqdn": "freya.suse.de"
+  "fqdn": "freya.suse.de",
+  "kvm": {
+    "host": {
+      "kernel_modules": [
+        "kvm"
+      ]
+    }
+  }
 }
