@@ -5,8 +5,8 @@
     "recipe[icecream]",
     "recipe[chrome]",
     "recipe[irssi]",
-    "recipe[osc]",
     "recipe[centerim]",
+    "recipe[osc]",
     "recipe[libvirt]",
     "recipe[vagrant]",
     "recipe[skype]",
@@ -16,27 +16,5 @@
     "recipe[kfilebox]",
     "recipe[crowbar]"
   ],
-  "fqdn": "mimir.suse.de",
-  "kvm": {
-    "host": {
-      "kernel_modules": [
-        "kvm"
-      ]
-    }
-  },
-  "crowbar": {
-    "pools": {
-      "cloud": {
-        "action": [
-          "define", 
-          "start", 
-          "autoboot"
-        ],
-        "type": "logical",
-        "target": "/dev/system",
-        "device": "/dev/sda2",
-        "volume": "system"
-      }
-    }
-  }
+  "fqdn": "mimir.suse.de"
 }

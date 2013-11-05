@@ -16,27 +16,5 @@
     "recipe[kfilebox]",
     "recipe[crowbar]"
   ],
-  "fqdn": "freya.suse.de",
-  "kvm": {
-    "host": {
-      "kernel_modules": [
-        "kvm"
-      ]
-    }
-  },
-  "crowbar": {
-    "pools": {
-      "cloud": {
-        "action": [
-          "define", 
-          "start", 
-          "autoboot"
-        ],
-        "type": "logical",
-        "target": "/dev/system",
-        "device": "/dev/sda2",
-        "volume": "system"
-      }
-    }
-  }
+  "fqdn": "freya.suse.de"
 }
