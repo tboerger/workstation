@@ -22,5 +22,22 @@
         "kvm"
       ]
     }
+  },
+  "suse": {
+    "cloud": {
+      "pools": {
+        "cloud": {
+          "action": [
+            "define", 
+            "start", 
+            "autoboot"
+          ],
+          "type": "logical",
+          "target": "/dev/system",
+          "device": "/dev/sda2",
+          "volume": "system"
+        }
+      }
+    }
   }
 }
