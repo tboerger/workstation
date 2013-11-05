@@ -13,7 +13,8 @@
     "recipe[sublime]",
     "recipe[rubymine]",
     "recipe[kvm]",
-    "recipe[kfilebox]"
+    "recipe[kfilebox]",
+    "recipe[crowbar]"
   ],
   "fqdn": "freya.suse.de",
   "kvm": {
@@ -23,20 +24,18 @@
       ]
     }
   },
-  "suse": {
-    "cloud": {
-      "pools": {
-        "cloud": {
-          "action": [
-            "define", 
-            "start", 
-            "autoboot"
-          ],
-          "type": "logical",
-          "target": "/dev/system",
-          "device": "/dev/sda2",
-          "volume": "system"
-        }
+  "crowbar": {
+    "pools": {
+      "cloud": {
+        "action": [
+          "define", 
+          "start", 
+          "autoboot"
+        ],
+        "type": "logical",
+        "target": "/dev/system",
+        "device": "/dev/sda2",
+        "volume": "system"
       }
     }
   }
