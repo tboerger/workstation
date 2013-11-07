@@ -15,10 +15,10 @@ echo
 
 if [ -f /etc/SuSE-release ]; then
   if [ ! -f /usr/bin/chef-client ]; then
-    sudo rpm -Uvh https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.6.2-1.el6.x86_64.rpm
+    rpm -Uvh https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.6.2-1.el6.x86_64.rpm
   fi
 
-  [[ ! -f /usr/bin/git ]] && zypper in git-core
+  [[ ! -f /usr/bin/git ]] && zypper -q in -y git-core
 fi
 
 if [ -f /etc/debian_version ]; then
@@ -26,7 +26,7 @@ if [ -f /etc/debian_version ]; then
     curl -L https://www.opscode.com/chef/install.sh | bash
   fi
 
-  [[ ! -f /usr/bin/git ]] && aptitude install git-core
+  [[ ! -f /usr/bin/git ]] && aptitude install -y git-core
 fi
 
 if [ -f /usr/bin/sw_vers ]; then
