@@ -14,6 +14,7 @@
     "recipe[rubymine]",
     "recipe[kvm]",
     "recipe[kfilebox]",
+    "recipe[kdiff3]",
     "recipe[crowbar]"
   ],
   "fqdn": "mimir.suse.de"
