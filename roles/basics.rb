@@ -10,7 +10,6 @@ run_list(
   "recipe[git]",
   "recipe[subversion]",
   "recipe[ruby]",
-  "recipe[homesick]",
   "recipe[htop]",
   "recipe[screen]",
   "recipe[vim]",
