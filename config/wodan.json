@@ -1,6 +1,6 @@
 {
   "run_list": [
-
+    "role[wodan]"
   ],
   "fqdn": "wodan.webhippie.de"
 }

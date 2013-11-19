@@ -1,6 +1,6 @@
 {
   "run_list": [
-
+    "role[thor]"
   ],
   "fqdn": "thor.webhippie.de"
 }
