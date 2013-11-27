@@ -27,7 +27,7 @@ default_attributes({
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
-        "vnc" => 5901,
+        "vnc" => 5904,
         "disks" => [
           {
             "type" => "file",
@@ -37,9 +37,8 @@ default_attributes({
         ],
         "interfaces" => [
           {
-            "type" => "bridge",
-            "source" => "virbr1",
-            "target" => "vnet4"
+            "type" => "network",
+            "source" => "cloud"
           }
         ]
       },
@@ -47,7 +46,7 @@ default_attributes({
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
-        "vnc" => 5901,
+        "vnc" => 5905,
         "disks" => [
           {
             "type" => "file",
@@ -57,9 +56,8 @@ default_attributes({
         ],
         "interfaces" => [
           {
-            "type" => "bridge",
-            "source" => "virbr1",
-            "target" => "vnet5"
+            "type" => "network",
+            "source" => "cloud"
           }
         ]
       }
