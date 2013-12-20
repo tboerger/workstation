@@ -23,7 +23,7 @@ run_list(
 default_attributes({
   "crowbar" => {
     "nodes" => {
-      "cloudx-node4" => {
+      "cloud3-node4" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -31,7 +31,7 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloudx-node4.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node4.qcow2",
             "target" => "vda"
           }
         ],
@@ -42,7 +42,7 @@ default_attributes({
           }
         ]
       },
-      "cloudx-node5" => {
+      "cloud3-node5" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -50,7 +50,45 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloudx-node5.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node5.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud2-node4" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5904,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud2-node4.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud2-node5" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5905,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud2-node5.qcow2",
             "target" => "vda"
           }
         ],
