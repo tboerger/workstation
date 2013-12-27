@@ -3,7 +3,7 @@ description "Workstation freya"
 
 run_list(
   "role[basics]",
-  "recipe[suse]",
+  "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
   "recipe[irssi]",
@@ -16,8 +16,7 @@ run_list(
   "recipe[rubymine]",
   "recipe[kvm]",
   "recipe[kfilebox]",
-  "recipe[kdiff3]",
-  "recipe[crowbar]"
+  "recipe[kdiff3]"
 )
 
 default_attributes({})
