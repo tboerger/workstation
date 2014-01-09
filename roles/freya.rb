@@ -15,6 +15,7 @@ run_list(
   "recipe[sublime]",
   "recipe[rubymine]",
   "recipe[kvm]",
+  "recipe[virtmanager]",
   "recipe[kfilebox]",
   "recipe[kdiff3]",
   "recipe[crowbar]"
