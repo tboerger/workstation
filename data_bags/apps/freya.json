@@ -1,0 +1,33 @@
+{
+  "id": "freya",
+  "type": "simple",
+
+  "owner": "tboerger",
+  "group": "suse",
+
+  "domains": [
+    "freya.suse.de"
+  ],
+
+  "index": [
+    "index.html",
+    "index.php",
+    "1Password.html"
+  ],
+
+  "root": "/home/tboerger/public_html",
+
+  "onlywww": false,
+  "nowww": false,
+
+  "services": [
+  ],
+
+  "database": {
+    "type": "none"
+  },
+
+  "available": [
+    "freya.suse.de"
+  ]
+}

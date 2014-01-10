@@ -17,10 +17,15 @@ run_list(
   "recipe[kvm]",
   "recipe[virtmanager]",
   "recipe[kfilebox]",
-  "recipe[kdiff3]"
+  "recipe[kdiff3]",
+  "recipe[nginx]",
+  "recipe[apps]"
 )
 
 default_attributes({
+  "nginx" => {
+    "apps" => %w()
+  },
   "libvirt" => {
     "networks" => {
       "cloud" => {
