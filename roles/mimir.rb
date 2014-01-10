@@ -3,6 +3,7 @@ description "Workstation mimir"
 
 run_list(
   "role[basics]",
+  "recipe[account]",
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
