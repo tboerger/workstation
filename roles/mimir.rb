@@ -4,6 +4,7 @@ description "Workstation mimir"
 run_list(
   "role[basics]",
   "recipe[account]",
+  "recipe[users]",
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
