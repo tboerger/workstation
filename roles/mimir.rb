@@ -26,7 +26,9 @@ run_list(
 
 default_attributes({
   "nginx" => {
-    "apps" => %w()
+    "apps" => %w(),
+    "user" => "tboerger",
+    "group" => "suse"
   },
   "libvirt" => {
     "networks" => {
