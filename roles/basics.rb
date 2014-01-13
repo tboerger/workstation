@@ -7,6 +7,7 @@ run_list(
   "recipe[locales]",
   "recipe[timezone]",
   "recipe[sshkey]",
+  "recipe[sysctl]",
   "recipe[git]",
   "recipe[subversion]",
   "recipe[ruby]",
