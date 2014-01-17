@@ -80,6 +80,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud3-node1.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud3-node1-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
@@ -99,6 +105,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud3-node2.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud3-node2-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
@@ -118,6 +130,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud3-node3.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud3-node3-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
@@ -158,6 +176,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud2-node1.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud2-node1-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
@@ -177,6 +201,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud2-node2.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud2-node2-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
@@ -196,6 +226,12 @@ default_attributes({
             "type" => "file",
             "source" => "/var/lib/libvirt/images/cloud2-node3.qcow2",
             "target" => "vda"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud2-node3-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
           }
         ],
         "interfaces" => [
