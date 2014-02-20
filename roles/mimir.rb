@@ -49,6 +49,287 @@ default_attributes({
       }
     },
     "nodes" => {
+      "cloud4-admin" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 8,
+        "vnc" => 5900,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://clouddata.cloud.suse.de/images/SUSE_Cloud_3_Dev.x86_64-0.0.9.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud4-admin.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud",
+            "mac" => "52:54:00:77:77:70"
+          }
+        ]
+      },
+      "cloud4-node01" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5901,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node01.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node01-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node02" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5902,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node02.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node02-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node03" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5903,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node03.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node03-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node04" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5904,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node04.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node04-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node05" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5905,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node05.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node05-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node06" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5906,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node06.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node06-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node07" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5907,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node07.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node07-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node08" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5908,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node08.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node08-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node09" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5909,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node09.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node09-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
+      "cloud4-node10" => {
+        "action" => %w(define),
+        "memory" => 1024,
+        "cpus" => 4,
+        "vnc" => 5910,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node10.qcow2",
+            "target" => "vda",
+            "size" => "50G"
+          },
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/cloud4-node10-storage.qcow2",
+            "target" => "vdb",
+            "size" => "50G"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "cloud"
+          }
+        ]
+      },
       "cloud3-admin" => {
         "action" => %w(define),
         "memory" => 2048,
@@ -57,7 +338,7 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "download" => "http://tinyurl.com/suse-cloud-3-dev-0-0-8",
+            "download" => "http://clouddata.cloud.suse.de/images/SUSE_Cloud_3_Dev.x86_64-0.0.9.qcow2",
             "source" => "/var/lib/libvirt/images/cloud3-admin.qcow2",
             "target" => "vda"
           }
@@ -70,7 +351,7 @@ default_attributes({
           }
         ]
       },
-      "cloud3-node1" => {
+      "cloud3-node01" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -78,12 +359,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node1.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud3-node01.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node1-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node01-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -95,7 +377,7 @@ default_attributes({
           }
         ]
       },
-      "cloud3-node2" => {
+      "cloud3-node02" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -103,12 +385,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node2.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud3-node02.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node2-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node02-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -120,7 +403,7 @@ default_attributes({
           }
         ]
       },
-      "cloud3-node3" => {
+      "cloud3-node03" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -128,12 +411,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node3.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud3-node03.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node3-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node03-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -145,7 +429,7 @@ default_attributes({
           }
         ]
       },
-      "cloud3-node4" => {
+      "cloud3-node04" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -153,12 +437,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node4.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud3-node04.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node4-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node04-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -170,7 +455,7 @@ default_attributes({
           }
         ]
       },
-      "cloud3-node5" => {
+      "cloud3-node05" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -178,12 +463,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node5.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud3-node05.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud3-node5-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud3-node05-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -203,7 +489,7 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "download" => "http://tinyurl.com/suse-cloud-2-dev-0-0-8",
+            "download" => "http://clouddata.cloud.suse.de/images/SUSE_Cloud_2_Dev.x86_64-0.0.9.qcow2",
             "source" => "/var/lib/libvirt/images/cloud2-admin.qcow2",
             "target" => "vda"
           }
@@ -216,7 +502,7 @@ default_attributes({
           }
         ]
       },
-      "cloud2-node1" => {
+      "cloud2-node01" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -224,12 +510,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node1.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud2-node01.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node1-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud2-node01-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -241,7 +528,7 @@ default_attributes({
           }
         ]
       },
-      "cloud2-node2" => {
+      "cloud2-node02" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -249,12 +536,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node2.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud2-node02.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node2-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud2-node02-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -266,7 +554,7 @@ default_attributes({
           }
         ]
       },
-      "cloud2-node3" => {
+      "cloud2-node03" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -274,12 +562,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node3.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud2-node03.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node3-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud2-node03-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -291,7 +580,7 @@ default_attributes({
           }
         ]
       },
-      "cloud2-node4" => {
+      "cloud2-node04" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -299,12 +588,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node4.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud2-node04.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node4-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud2-node04-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -316,7 +606,7 @@ default_attributes({
           }
         ]
       },
-      "cloud2-node5" => {
+      "cloud2-node05" => {
         "action" => %w(define),
         "memory" => 1024,
         "cpus" => 4,
@@ -324,12 +614,13 @@ default_attributes({
         "disks" => [
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node5.qcow2",
-            "target" => "vda"
+            "source" => "/var/lib/libvirt/images/cloud2-node05.qcow2",
+            "target" => "vda",
+            "size" => "50G"
           },
           {
             "type" => "file",
-            "source" => "/var/lib/libvirt/images/cloud2-node5-storage.qcow2",
+            "source" => "/var/lib/libvirt/images/cloud2-node05-storage.qcow2",
             "target" => "vdb",
             "size" => "50G"
           }
@@ -338,6 +629,44 @@ default_attributes({
           {
             "type" => "network",
             "source" => "cloud"
+          }
+        ]
+      },
+
+      "build-ubuntu" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 8,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://vagrant.webhippie.de/kvm/ubuntu-12.04-amd64-minimal.qcow2",
+            "source" => "/var/lib/libvirt/images/build-ubuntu.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "default"
+          }
+        ]
+      },
+      "build-ubuntu-test" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 8,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/build-ubuntu-test.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "default"
           }
         ]
       }
