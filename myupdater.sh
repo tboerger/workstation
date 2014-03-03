@@ -15,7 +15,7 @@ echo
 
 if [ -f /etc/SuSE-release ]; then
   if [ ! -f /usr/bin/chef-client ]; then
-    rpm -Uvh https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.6.2-1.el6.x86_64.rpm
+    zypper in -y http://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.6.2-1.el6.x86_64.rpm
   fi
 
   [[ ! -f /usr/bin/git ]] && zypper -q in -y git-core
