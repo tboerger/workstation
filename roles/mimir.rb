@@ -518,6 +518,44 @@ default_attributes({
             "source" => "default"
           }
         ]
+      },
+
+      "build-opensuse" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 8,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://vagrant.webhippie.de/kvm/opensuse-13.1-amd64-minimal.qcow2",
+            "source" => "/var/lib/libvirt/images/build-opensuse.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "default"
+          }
+        ]
+      },
+      "build-opensuse-test" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 8,
+        "disks" => [
+          {
+            "type" => "file",
+            "source" => "/var/lib/libvirt/images/build-opensuse-test.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "default"
+          }
+        ]
       }
     }
   }
