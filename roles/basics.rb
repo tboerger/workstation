@@ -15,7 +15,6 @@ run_list(
   "recipe[screen]",
   "recipe[vim]",
   "recipe[nano]",
-  "recipe[locate]",
   "recipe[cronlist]",
   "recipe[sqlite]",
   "recipe[sudo]",
