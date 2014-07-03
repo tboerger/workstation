@@ -15,7 +15,7 @@
     "1Password.html"
   ],
 
-  "root": "/home/tboerger/public_html",
+  "root": "/home/tboerger/Public",
 
   "onlywww": false,
   "nowww": false,
