@@ -9,10 +9,10 @@ run_list(
   "recipe[icecream]",
   "recipe[chrome]",
   "recipe[irssi]",
-  "recipe[centerim]",
+  "recipe[pidgin]",
   "recipe[osc]",
   "recipe[libvirt]",
-  #"recipe[vagrant]",
+  "recipe[vagrant]",
   "recipe[skype]",
   "recipe[sublime]",
   "recipe[rubymine]",
@@ -25,6 +25,11 @@ run_list(
 )
 
 default_attributes({
+  "vagrant" => {
+    "mapping" => {
+      "tboerger" => "/home/tboerger"
+    }
+  },
   "nginx" => {
     "apps" => %w(),
     "user" => "tboerger",
