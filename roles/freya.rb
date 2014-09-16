@@ -17,6 +17,7 @@ run_list(
   "recipe[sublime]",
   "recipe[kvm]",
   "recipe[virtmanager]",
+  "recipe[i3]",
   "recipe[nginx]",
   "recipe[apps]"
 )
