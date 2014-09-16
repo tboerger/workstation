@@ -1,0 +1,13 @@
+{
+  "id": "crowbar-tex",
+  "fqdn": "crowbar.tex.cloud.suse.de",
+  "ipaddress": "192.168.150.10",
+  "aliases": [
+    "tex",
+    "crowbar"
+  ],
+  "available": [
+    "mimir.suse.de",
+    "freya.suse.de"
+  ]
+}

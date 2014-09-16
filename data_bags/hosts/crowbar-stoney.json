@@ -1,0 +1,13 @@
+{
+  "id": "crowbar-stoney",
+  "fqdn": "crowbar.stoney.cloud.suse.de",
+  "ipaddress": "192.168.140.10",
+  "aliases": [
+    "stoney",
+    "crowbar"
+  ],
+  "available": [
+    "mimir.suse.de",
+    "freya.suse.de"
+  ]
+}
