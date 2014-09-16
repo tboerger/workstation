@@ -1,6 +1,0 @@
-{
-  "run_list": [
-    "role[odin]"
-  ],
-  "fqdn": "odin.webhippie.de"
-}

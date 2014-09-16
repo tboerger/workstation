@@ -1,0 +1,6 @@
+{
+  "run_list": [
+    "role[loki]"
+  ],
+  "fqdn": "loki.webhippie.de"
+}

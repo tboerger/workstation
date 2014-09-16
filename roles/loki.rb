@@ -1,5 +1,5 @@
-name "odin"
-description "Workstation odin"
+name "loki"
+description "Workstation loki"
 
 run_list(
 
