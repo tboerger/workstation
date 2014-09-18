@@ -17,6 +17,10 @@ run_list(
   "recipe[sublime]",
   "recipe[kvm]",
   "recipe[virtmanager]",
+  "recipe[mpd]",
+  "recipe[nvidia]",
+  "recipe[parcellite]",
+  "recipe[x11utils]",
   "recipe[i3]",
   "recipe[nginx]",
   "recipe[apps]"
