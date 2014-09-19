@@ -18,7 +18,6 @@ run_list(
   "recipe[kvm]",
   "recipe[virtmanager]",
   "recipe[mpd]",
-  "recipe[nvidia]",
   "recipe[parcellite]",
   "recipe[x11utils]",
   "recipe[i3]",
