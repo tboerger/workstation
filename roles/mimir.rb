@@ -21,6 +21,7 @@ run_list(
   "recipe[nvidia]",
   "recipe[parcellite]",
   "recipe[x11utils]",
+  "recipe[dropbox]",
   "recipe[i3]",
   "recipe[nginx]",
   "recipe[apps]"

@@ -20,6 +20,7 @@ run_list(
   "recipe[mpd]",
   "recipe[parcellite]",
   "recipe[x11utils]",
+  "recipe[dropbox]",
   "recipe[i3]",
   "recipe[nginx]",
   "recipe[apps]"
