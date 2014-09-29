@@ -14,6 +14,7 @@ run_list(
   "recipe[kvm]",
   "recipe[libvirt]",
   "recipe[vagrant]",
+  "recipe[packer]",
   "recipe[skype]",
   "recipe[sublime]",
   "recipe[virtmanager]",
