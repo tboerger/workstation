@@ -24,6 +24,7 @@ run_list(
   "recipe[x11utils]",
   "recipe[dropbox]",
   "recipe[i3]",
+  "recipe[mumble]",
   "recipe[nginx]",
   "recipe[apps]"
 )
