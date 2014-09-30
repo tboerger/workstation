@@ -41,81 +41,81 @@ default_attributes({
   },
   "libvirt" => {
     "nodes" => {
-      "build-ubuntu" => {
-        "action" => %w(define),
-        "memory" => 2048,
-        "cpus" => 8,
-        "disks" => [
-          {
-            "type" => "file",
-            "download" => "http://vagrant.webhippie.de/kvm/ubuntu-12.04-amd64-minimal.qcow2",
-            "source" => "/var/lib/libvirt/images/build-ubuntu.qcow2",
-            "target" => "vda"
-          }
-        ],
-        "interfaces" => [
-          {
-            "type" => "network",
-            "source" => "default"
-          }
-        ]
-      },
-      "build-ubuntu-test" => {
-        "action" => %w(define),
-        "memory" => 2048,
-        "cpus" => 8,
-        "disks" => [
-          {
-            "type" => "file",
-            "source" => "/var/lib/libvirt/images/build-ubuntu-test.qcow2",
-            "target" => "vda"
-          }
-        ],
-        "interfaces" => [
-          {
-            "type" => "network",
-            "source" => "default"
-          }
-        ]
-      },
+      # "build-ubuntu" => {
+      #   "action" => %w(define),
+      #   "memory" => 2048,
+      #   "cpus" => 8,
+      #   "disks" => [
+      #     {
+      #       "type" => "file",
+      #       "download" => "http://vagrant.webhippie.de/kvm/ubuntu-12.04-amd64-minimal.qcow2",
+      #       "source" => "/var/lib/libvirt/images/build-ubuntu.qcow2",
+      #       "target" => "vda"
+      #     }
+      #   ],
+      #   "interfaces" => [
+      #     {
+      #       "type" => "network",
+      #       "source" => "default"
+      #     }
+      #   ]
+      # },
+      # "build-ubuntu-test" => {
+      #   "action" => %w(define),
+      #   "memory" => 2048,
+      #   "cpus" => 8,
+      #   "disks" => [
+      #     {
+      #       "type" => "file",
+      #       "source" => "/var/lib/libvirt/images/build-ubuntu-test.qcow2",
+      #       "target" => "vda"
+      #     }
+      #   ],
+      #   "interfaces" => [
+      #     {
+      #       "type" => "network",
+      #       "source" => "default"
+      #     }
+      #   ]
+      # },
 
-      "build-opensuse" => {
-        "action" => %w(define),
-        "memory" => 2048,
-        "cpus" => 8,
-        "disks" => [
-          {
-            "type" => "file",
-            "download" => "http://vagrant.webhippie.de/kvm/opensuse-13.1-amd64-minimal.qcow2",
-            "source" => "/var/lib/libvirt/images/build-opensuse.qcow2",
-            "target" => "vda"
-          }
-        ],
-        "interfaces" => [
-          {
-            "type" => "network",
-            "source" => "default"
-          }
-        ]
-      },
-      "build-opensuse-test" => {
-        "action" => %w(define),
-        "memory" => 2048,
-        "cpus" => 8,
-        "disks" => [
-          {
-            "type" => "file",
-            "source" => "/var/lib/libvirt/images/build-opensuse-test.qcow2",
-            "target" => "vda"
-          }
-        ],
-        "interfaces" => [
-          {
-            "type" => "network",
-            "source" => "default"
-          }
-        ]
-      }
+      # "build-opensuse" => {
+      #   "action" => %w(define),
+      #   "memory" => 2048,
+      #   "cpus" => 8,
+      #   "disks" => [
+      #     {
+      #       "type" => "file",
+      #       "download" => "http://vagrant.webhippie.de/kvm/opensuse-13.1-amd64-minimal.qcow2",
+      #       "source" => "/var/lib/libvirt/images/build-opensuse.qcow2",
+      #       "target" => "vda"
+      #     }
+      #   ],
+      #   "interfaces" => [
+      #     {
+      #       "type" => "network",
+      #       "source" => "default"
+      #     }
+      #   ]
+      # },
+      # "build-opensuse-test" => {
+      #   "action" => %w(define),
+      #   "memory" => 2048,
+      #   "cpus" => 8,
+      #   "disks" => [
+      #     {
+      #       "type" => "file",
+      #       "source" => "/var/lib/libvirt/images/build-opensuse-test.qcow2",
+      #       "target" => "vda"
+      #     }
+      #   ],
+      #   "interfaces" => [
+      #     {
+      #       "type" => "network",
+      #       "source" => "default"
+      #     }
+      #   ]
+      # }
     }
   }
 })
