@@ -20,4 +20,4 @@ cache_options({
   skip_expires: true
 })
 
-log_level :info
+log_level :warn
