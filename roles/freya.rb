@@ -22,6 +22,7 @@ run_list(
   "recipe[parcellite]",
   "recipe[x11utils]",
   "recipe[dropbox]",
+  "recipe[lightdm]",
   "recipe[i3]",
   "recipe[mumble]",
   "recipe[nginx]",
