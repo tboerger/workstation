@@ -13,6 +13,7 @@ run_list(
   "recipe[osc]",
   "recipe[kvm]",
   "recipe[libvirt]",
+  "recipe[virtualbox]",
   "recipe[vagrant]",
   "recipe[packer]",
   "recipe[skype]",
@@ -30,6 +31,9 @@ run_list(
 )
 
 default_attributes({
+  "virtualbox" => {
+    "users" => %w(tboerger)
+  },
   "vagrant" => {
     "mapping" => {
       "tboerger" => "/home/tboerger"
