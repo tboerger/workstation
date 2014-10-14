@@ -21,3 +21,6 @@ cache_options({
 })
 
 log_level :warn
+
+ssl_verify_mode = :verify_peer
+zypper_check_gpg = true
