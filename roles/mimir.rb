@@ -28,6 +28,7 @@ run_list(
   "recipe[i3]",
   "recipe[mumble]",
   "recipe[nginx]",
+  "recipe[chefdk]",
   "recipe[apps]"
 )
 
