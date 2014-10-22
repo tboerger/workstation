@@ -16,11 +16,11 @@ file_cache_path File.join('/root', '.chef', 'cache')
 file_backup_path File.join('/root', '.chef', 'backup')
 
 cache_options({
-  path: File.join('/root', '.chef', 'cache', 'checksums'), 
+  path: File.join('/root', '.chef', 'cache', 'checksums'),
   skip_expires: true
 })
 
 log_level :warn
 
-ssl_verify_mode = :verify_peer
-zypper_check_gpg = true
+ssl_verify_mode :verify_peer
+zypper_check_gpg true
