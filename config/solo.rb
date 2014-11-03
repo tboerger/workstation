@@ -4,7 +4,6 @@ root_path = File.expand_path(
 )
 
 cookbook_path [
-  File.join(root_path, 'vendor'),
   File.join(root_path, 'cookbooks')
 ]
 

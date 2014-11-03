@@ -8,6 +8,5 @@ cookbook_email 'thomas@webhippie.de'
 cookbook_license 'apachev2'
 
 cookbook_path [
-  File.join(root_path, 'vendor'),
   File.join(root_path, 'cookbooks')
 ]
