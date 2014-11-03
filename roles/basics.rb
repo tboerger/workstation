@@ -2,7 +2,7 @@ name "basics"
 description "Basics role"
 
 run_list(
-  "role[vendor]",
+  "recipe[chef-solo-search]",
   "recipe[hosts]",
   "recipe[locales]",
   "recipe[timezone]",
@@ -23,5 +23,10 @@ run_list(
   "recipe[readline]"
 )
 
-default_attributes({})
-override_attributes({})
+default_attributes({
+
+})
+
+override_attributes({
+
+})

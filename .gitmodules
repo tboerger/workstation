@@ -1,3 +1,0 @@
-[submodule "vendor/chef-solo-search"]
-	path = vendor/chef-solo-search
-	url = https://github.com/edelight/chef-solo-search.git

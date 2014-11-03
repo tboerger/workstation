@@ -12,8 +12,7 @@ then
   fi
 fi
 
-HOST=`hostname`
-NODE=$(cut -d '.' -f 1 <<< $HOST)
+NODE=$(hostname -s)
 
 if [ -L $0 ]
 then
@@ -22,7 +21,7 @@ else
   ROOT=$(dirname $0)
 fi
 
-while [ ! -f ${ROOT}/config/${NODE}.json ]
+while [ ! -f ${ROOT}/nodes/${NODE}.json ]
 do
   echo
   echo "Configuration does not exist!"
@@ -31,4 +30,4 @@ do
   read NODE
 done
 
-chef-solo -c ${ROOT}/config/solo.rb -j ${ROOT}/config/${NODE}.json -N ${NODE}
+chef-solo -c ${ROOT}/config/solo.rb -j ${ROOT}/nodes/${NODE}.json -N ${NODE}

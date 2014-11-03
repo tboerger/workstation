@@ -1,0 +1,399 @@
+DEPENDENCIES
+  account
+    git: git://github.com/chefhippie/account.git
+    revision: 2e813997a313f7711c94f623889f63153a18bac5
+  apps
+    git: git://github.com/chefhippie/apps.git
+    revision: 8848e920cf16197a4340a8094d040e0f1f7ff394
+  apt
+    git: git://github.com/chefhippie/apt.git
+    revision: f553f89ea8a6b8201fc630e3da313d6292698f3c
+  backup2l
+    git: git://github.com/chefhippie/backup2l.git
+    revision: bdf22bcea79fe9d9699ab46b2403097cea58566b
+  build
+    git: git://github.com/chefhippie/build.git
+    revision: bb3f91d78915002778bd8ca812b7f560891c4ae5
+  bundler
+    git: git://github.com/chefhippie/bundler.git
+    revision: 138b0a3f301889e1990dd963febeb7e41a1ff3ee
+  chef-solo-search
+    git: git://github.com/edelight/chef-solo-search.git
+    revision: 848fad1461c78fd502975f1df2e14eed12610635
+  chrome
+    git: git://github.com/chefhippie/chrome.git
+    revision: 8749f65b67b113d6f4045f57321633203a8acba2
+  cronlist
+    git: git://github.com/chefhippie/cronlist.git
+    revision: 328379f450171d5d0feed06a9f134e6c99a5d2da
+  daemontools
+    git: git://github.com/chefhippie/daemontools.git
+    revision: 283507ffbfdf2df381321dd3e6db57113f06c807
+  database
+    git: git://github.com/chefhippie/database.git
+    revision: 4aaff53d13b32599b66752cbf2230314eea84149
+  dropbox
+    git: git://github.com/chefhippie/dropbox.git
+    revision: 4e07ae07e42712124fc4c0ec12bc42335b588754
+  elasticsearch
+    git: git://github.com/chefhippie/elasticsearch.git
+    revision: 3148ffe6ffe02874f3191982da3b3e003c578d38
+  foreman
+    git: git://github.com/chefhippie/foreman.git
+    revision: ca63dad2ce0d54243de18b4bf8c10630966f9597
+  git
+    git: git://github.com/chefhippie/git.git
+    revision: 46ab14f5902b2ba2b215247b13c596a006d2ed11
+  gitlab
+    git: git://github.com/chefhippie/gitlab.git
+    revision: de8f329bf81054d90ca7c0927c679542360cc64b
+  homeshick
+    git: git://github.com/chefhippie/homeshick.git
+    revision: efaf2b503f6195fc3d7e138743bde7896dfbb642
+  homesick
+    git: git://github.com/chefhippie/homesick.git
+    revision: 7eea6e2e9264d53f82deb2fb73958cb0b27a502e
+  hosts
+    git: git://github.com/chefhippie/hosts.git
+    revision: 759fa4f8fab53ab17fb8546a52d919d1b59b1f9e
+  htop
+    git: git://github.com/chefhippie/htop.git
+    revision: a2cb8a95bc6ceb5d3082c07102b2bf01ae9f5111
+  i3
+    git: git://github.com/chefhippie/i3.git
+    revision: 56dee82112ca250740a79fd7f14226d252c6d417
+  icecream
+    git: git://github.com/chefhippie/icecream.git
+    revision: a66b9d3e61ef090dfdf08b197b3b0216fab2c943
+  imagemagick
+    git: git://github.com/chefhippie/imagemagick.git
+    revision: 5db11892194747e034d86b6248338a4a5ed8d6ff
+  irssi
+    git: git://github.com/chefhippie/irssi.git
+    revision: 0f4f3e08cb78c554df9b05744e0c8993d7fb5f24
+  java
+    git: git://github.com/chefhippie/java.git
+    revision: 1210732777cd7d7f077c49eb3342b4fdfc3a6889
+  jenkins
+    git: git://github.com/chefhippie/jenkins.git
+    revision: 30b571bab2ca5126ffd0ed0c2c11dcd12f081c83
+  kdiff3
+    git: git://github.com/chefhippie/kdiff3.git
+    revision: e20618cdb95958bd07fda0d6e152cd043ef4ed63
+  kernel
+    git: git://github.com/chefhippie/kernel.git
+    revision: c185008832c14dc18b5fb7d1ebdb7e61736789d1
+  kfilebox
+    git: git://github.com/chefhippie/kfilebox.git
+    revision: c8a68b7920f46150563667fd8cfecd2c730b3e05
+  kolab
+    git: git://github.com/chefhippie/kolab.git
+    revision: 8066865bf79bb6594976220f8f65b4df02d83b10
+  kvm
+    git: git://github.com/chefhippie/kvm.git
+    revision: 8eea8c9f814fbbffe4a5b5148ed8d3009b1c6e9d
+  libicu
+    git: git://github.com/chefhippie/libicu.git
+    revision: 00f2d0aadf6566f390a24b1bc5c90a10ed1ed56e
+  libvirt
+    git: git://github.com/chefhippie/libvirt.git
+    revision: f8412cacc44ffb43971ac80af598dd02bd178f80
+  lightdm
+    git: git://github.com/chefhippie/lightdm.git
+    revision: b7a9fc97406b8791771428dce6d3138b18ad49f5
+  locales
+    git: git://github.com/chefhippie/locales.git
+    revision: 156782ab79ac7dfeba203ca42c5878c70903c7dd
+  locate
+    git: git://github.com/chefhippie/locate.git
+    revision: 3cca55e64e402b64638253ccd95dba56cdb7ca53
+  memcached
+    git: git://github.com/chefhippie/memcached.git
+    revision: 1cecd08715eea05ced793465afab36def80c99d7
+  mongodb
+    git: git://github.com/chefhippie/mongodb.git
+    revision: 4a5f65a2fcce7272209b107ffb7f3c3e64377bbf
+  motd
+    git: git://github.com/chefhippie/motd.git
+    revision: d8f9fe7fbb47224cf2dadf61bbbb013712c70268
+  mpd
+    git: git://github.com/chefhippie/mpd.git
+    revision: 18565b44789c886229c8faacf847fe766e191dd2
+  mumble
+    git: git://github.com/chefhippie/mumble.git
+    revision: 99e29aa5b028a4f3ffc8ea2b9ef4b3ef14c70fee
+  mysql
+    git: git://github.com/chefhippie/mysql.git
+    revision: 4b677f66394d51f12b36b673d0ce3bf8496668ed
+  nano
+    git: git://github.com/chefhippie/nano.git
+    revision: ed6b33a52ed9ef35573eed2ae5eae0c861a4824c
+  network
+    git: git://github.com/chefhippie/network.git
+    revision: 928db58a111ec1e233e48d2d7ad3523b7cb97101
+  nginx
+    git: git://github.com/chefhippie/nginx.git
+    revision: 3992e72e4058aac841aca4bb0092b2e37eb94932
+  nodejs
+    git: git://github.com/chefhippie/nodejs.git
+    revision: afec7d5e766400a37880deeeea1f4e0f4a05e686
+  ntp
+    git: git://github.com/chefhippie/ntp.git
+    revision: e4a69e6409e368918fd0a8369556ce6d7e134f75
+  nvidia
+    git: git://github.com/chefhippie/nvidia.git
+    revision: 5d36dce1aebfca97462ab6995676bf3effbc737f
+  openssh
+    git: git://github.com/chefhippie/openssh.git
+    revision: 023c4d8b07e33aad635c2a0267fdf48bb8e78e44
+  openssl
+    git: git://github.com/chefhippie/openssl.git
+    revision: e25f09abd249e5e84b0007012ae460b17e1d7289
+  osc
+    git: git://github.com/chefhippie/osc.git
+    revision: 64377ab7b86ebbcbeb98ee59f4679a29ba0dec3e
+  packer
+    git: git://github.com/chefhippie/packer.git
+    revision: 16f96cbdc49eaaa46619d1142579cb6336ce0c6b
+  parcellite
+    git: git://github.com/chefhippie/parcellite.git
+    revision: 9d8142892d9bac0504e58f9c49a32d397c32acdf
+  php
+    git: git://github.com/chefhippie/php.git
+    revision: c0bf691b0f15fcc6fb00f81d74a9c2a59b5e9667
+  pidgin
+    git: git://github.com/chefhippie/pidgin.git
+    revision: 1b49ee86fe4ac95f6632393c8071eb82d4eebad0
+  postgresql
+    git: git://github.com/chefhippie/postgresql.git
+    revision: 5bcdf7402dc5e42ce59b8c53960e9a3d31b41126
+  python
+    git: git://github.com/chefhippie/python.git
+    revision: 7a11b5e6ac13e0f21d587c46c22851711c159504
+  readline
+    git: git://github.com/chefhippie/readline.git
+    revision: f8595900aa8474005164162c722557c5683b040c
+  redis
+    git: git://github.com/chefhippie/redis.git
+    revision: 97ef0812567b6f3d2914206dc2632d563bf16bee
+  ruby
+    git: git://github.com/chefhippie/ruby.git
+    revision: e0453915a9263686bcc97b7ef5705e5cc6c4635e
+  rubymine
+    git: git://github.com/chefhippie/rubymine.git
+    revision: b6cb484af298ff7adf2aa20b0161aafefe8418f3
+  screen
+    git: git://github.com/chefhippie/screen.git
+    revision: f470ee03e9fef4dfb12e6bb8170f5ccfb836ee3a
+  skype
+    git: git://github.com/chefhippie/skype.git
+    revision: cd75dae970fba6e5979b074d93f349a2d4bab478
+  sqlite
+    git: git://github.com/chefhippie/sqlite.git
+    revision: c9eef0a0a8d0630315e2f51690467eba734d5c9d
+  sshkey
+    git: git://github.com/chefhippie/sshkey.git
+    revision: fa602e6ad21a0fe77b8d42fd6c783c7f389bd875
+  sublime
+    git: git://github.com/chefhippie/sublime.git
+    revision: 7430f44c3ac29b504ccda7dba0602c1acd069c3d
+  subversion
+    git: git://github.com/chefhippie/subversion.git
+    revision: 65bc3ad86ee9a702bba9c265edfab78f9f3e8e45
+  sudo
+    git: git://github.com/chefhippie/sudo.git
+    revision: 4879184c49670fdd980584ba50137e09f0900644
+  sysctl
+    git: git://github.com/chefhippie/sysctl.git
+    revision: fac2ad4da8b737a39341d9f2c844595e4234098f
+  timezone
+    git: git://github.com/chefhippie/timezone.git
+    revision: 07dba21297b67bd36723a7282ef4dbb0c1ae71d6
+  ucspi-tcp
+    git: git://github.com/chefhippie/ucspi-tcp.git
+    revision: 86e5f97ce56e0a84a8a407d41c88dd68f9623415
+  users
+    git: git://github.com/chefhippie/users.git
+    revision: d4590cb63f4b63773f18096bf6a3bf7108e12557
+  vagrant
+    git: git://github.com/chefhippie/vagrant.git
+    revision: eaee9c922e3e1b5ac6fd48d59d1b5eb92eab1f8f
+  vim
+    git: git://github.com/chefhippie/vim.git
+    revision: 9b86fd47ebe650ae00b8734f450a3036c6ad6728
+  virtmanager
+    git: git://github.com/chefhippie/virtmanager.git
+    revision: 5e9bb030e9faa57c209960ebc42e654495b63fcd
+  virtualbox
+    git: git://github.com/chefhippie/virtualbox.git
+    revision: 6cf51c05b51495e3435bca74e0d0537e86a2808a
+  webdev
+    git: git://github.com/chefhippie/webdev.git
+    revision: f596fc2753a975ad93246fd0f4fc4cc30cc5c77f
+  workstation
+    git: git://github.com/chefhippie/workstation.git
+    revision: dc67255d5acafd87a06fa052f4d91c7da05a78d8
+  x11utils
+    git: git://github.com/chefhippie/x11utils.git
+    revision: db3b8edcbae3a51ad8d19d11c7012734f3eb623c
+  xinetd
+    git: git://github.com/chefhippie/xinetd.git
+    revision: d3832fb8655131c8e47d2e7c4fc625c87356681c
+  zypper
+    git: git://github.com/chefhippie/zypper.git
+    revision: cec864544b1b9814e9bb90cb9453e4f46293a64d
+
+GRAPH
+  account (0.0.1)
+    homeshick (>= 0.0.0)
+    sshkey (>= 0.0.0)
+    sudo (>= 0.0.0)
+  apps (0.0.1)
+    bundler (>= 0.0.0)
+    elasticsearch (>= 0.0.0)
+    foreman (>= 0.0.0)
+    memcached (>= 0.0.0)
+    mongodb (>= 0.0.0)
+    mysql (>= 0.0.0)
+    nginx (>= 0.0.0)
+    php (>= 0.0.0)
+    postgresql (>= 0.0.0)
+    redis (>= 0.0.0)
+    ruby (>= 0.0.0)
+  apt (0.0.1)
+  backup2l (0.0.1)
+  build (0.0.1)
+  bundler (0.0.1)
+    ruby (>= 0.0.0)
+  chef-solo-search (0.5.1)
+  chrome (0.0.1)
+  cronlist (0.0.1)
+  daemontools (0.0.1)
+    zypper (>= 0.0.0)
+  database (0.0.1)
+  dropbox (0.0.1)
+  elasticsearch (0.0.1)
+    java (>= 0.0.0)
+  foreman (0.0.1)
+    ruby (>= 0.0.0)
+  git (0.0.1)
+    zypper (>= 0.0.0)
+  gitlab (0.0.1)
+    apps (>= 0.0.0)
+    git (>= 0.0.0)
+    libicu (>= 0.0.0)
+    python (>= 0.0.0)
+    readline (>= 0.0.0)
+  homeshick (0.0.1)
+    git (>= 0.0.0)
+  homesick (0.0.1)
+    git (>= 0.0.0)
+    ruby (>= 0.0.0)
+  hosts (0.0.1)
+  htop (0.0.1)
+    zypper (>= 0.0.0)
+  i3 (0.0.1)
+    zypper (>= 0.0.0)
+  icecream (0.0.1)
+  imagemagick (0.0.1)
+  irssi (0.0.1)
+  java (0.0.1)
+  jenkins (0.0.1)
+    apt (>= 0.0.0)
+    java (>= 0.0.0)
+    zypper (>= 0.0.0)
+  kdiff3 (0.0.1)
+  kernel (0.0.1)
+  kfilebox (0.0.1)
+    zypper (>= 0.0.0)
+  kolab (0.0.1)
+    apt (>= 0.0.0)
+    zypper (>= 0.0.0)
+  kvm (0.0.1)
+    kernel (>= 0.0.0)
+  libicu (0.0.1)
+    build (>= 0.0.0)
+  libvirt (0.0.1)
+    network (>= 0.0.0)
+  lightdm (0.0.1)
+    zypper (>= 0.0.0)
+  locales (0.0.1)
+  locate (0.0.1)
+  memcached (0.0.1)
+  mongodb (0.0.1)
+    apt (>= 0.0.0)
+    zypper (>= 0.0.0)
+  motd (0.0.1)
+    build (>= 0.0.0)
+  mpd (0.0.1)
+    zypper (>= 0.0.0)
+  mumble (0.0.1)
+  mysql (0.0.1)
+    database (>= 0.0.0)
+  nano (0.0.1)
+  network (0.0.1)
+  nginx (0.0.1)
+  nodejs (0.0.1)
+    zypper (>= 0.0.0)
+  ntp (0.0.1)
+  nvidia (0.0.1)
+    zypper (>= 0.0.0)
+  openssh (0.0.1)
+  openssl (0.0.1)
+  osc (0.0.1)
+    zypper (>= 0.0.0)
+  packer (0.0.1)
+  parcellite (0.0.1)
+  php (0.0.1)
+    zypper (>= 0.0.0)
+  pidgin (0.0.1)
+    zypper (>= 0.0.0)
+  postgresql (0.0.1)
+  python (0.0.1)
+    build (>= 0.0.0)
+  readline (0.0.1)
+  redis (0.0.1)
+    zypper (>= 0.0.0)
+  ruby (0.0.1)
+    zypper (>= 0.0.0)
+  rubymine (0.0.1)
+  screen (0.0.1)
+  skype (0.0.1)
+  sqlite (0.0.1)
+  sshkey (0.0.1)
+  sublime (0.1.0)
+  subversion (0.0.1)
+  sudo (0.0.1)
+  sysctl (0.0.1)
+  timezone (0.0.1)
+  ucspi-tcp (0.0.1)
+    zypper (>= 0.0.0)
+  users (0.0.1)
+    account (>= 0.0.0)
+    homeshick (>= 0.0.0)
+    sshkey (>= 0.0.0)
+  vagrant (0.0.1)
+  vim (0.0.1)
+  virtmanager (0.0.1)
+  virtualbox (0.0.1)
+    zypper (>= 0.0.0)
+  webdev (0.0.1)
+    elasticsearch (>= 0.0.0)
+    memcached (>= 0.0.0)
+    mongodb (>= 0.0.0)
+    mysql (>= 0.0.0)
+    nginx (>= 0.0.0)
+    php (>= 0.0.0)
+    postgresql (>= 0.0.0)
+    redis (>= 0.0.0)
+    ruby (>= 0.0.0)
+  workstation (0.0.1)
+    homeshick (>= 0.0.0)
+    libvirt (>= 0.0.0)
+    sshkey (>= 0.0.0)
+    sudo (>= 0.0.0)
+    zypper (>= 0.0.0)
+  x11utils (0.0.1)
+    zypper (>= 0.0.0)
+  xinetd (0.0.1)
+  zypper (0.0.1)
