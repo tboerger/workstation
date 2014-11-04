@@ -50,9 +50,6 @@ DEPENDENCIES
   homeshick
     git: git://github.com/chefhippie/homeshick.git
     revision: efaf2b503f6195fc3d7e138743bde7896dfbb642
-  homesick
-    git: git://github.com/chefhippie/homesick.git
-    revision: 7eea6e2e9264d53f82deb2fb73958cb0b27a502e
   hosts
     git: git://github.com/chefhippie/hosts.git
     revision: 759fa4f8fab53ab17fb8546a52d919d1b59b1f9e
@@ -286,9 +283,6 @@ GRAPH
     readline (>= 0.0.0)
   homeshick (0.0.1)
     git (>= 0.0.0)
-  homesick (0.0.1)
-    git (>= 0.0.0)
-    ruby (>= 0.0.0)
   hosts (0.0.1)
   htop (0.0.1)
     zypper (>= 0.0.0)
