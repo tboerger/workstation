@@ -71,14 +71,8 @@ else
 fi
 
 pushd /opt/workstation &> /dev/null
-
-if [ -d cookbooks ]
-then
-  berks vendor cookbooks
-else
-  berks update
-fi
-
+rm -rf cookbooks &> /dev/null
+berks vendor cookbooks
 popd &> /dev/null
 
 ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
