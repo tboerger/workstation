@@ -43,8 +43,8 @@ fi
 
 if [ -f /etc/debian_version ]
 then
-  if [ ! -f /usr/bin/chef-client ]
-  then
+  #if [ ! -f /usr/bin/chef-client ]
+  #then
 
     #
     # TODO: Detect debian and download deb package
@@ -57,7 +57,8 @@ then
     #
 
     # dpkg -i /tmp/chefdk.deb
-  fi
+
+  #fi
 
   [[ ! -f /usr/bin/git ]] && aptitude install -y git-core
 fi
