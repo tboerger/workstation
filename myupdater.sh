@@ -72,7 +72,7 @@ else
 fi
 
 pushd /opt/workstation &> /dev/null
-rm -rf cookbooks &> /dev/null
+rm -rf cookbooks Berksfile.lock &> /dev/null
 berks vendor cookbooks
 popd &> /dev/null
 
