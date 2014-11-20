@@ -32,6 +32,9 @@ run_list(
 )
 
 default_attributes({
+  "lightdm" => {
+    "xserver" => "X.x11-video-nvidiaG03"
+  },
   "virtualbox" => {
     "users" => %w(tboerger)
   },
