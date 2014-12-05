@@ -79,5 +79,6 @@ cookbook "backup2l", github: "chefhippie/backup2l"
 cookbook "apt", github: "chefhippie/apt"
 cookbook "apps", github: "chefhippie/apps"
 cookbook "account", github: "chefhippie/account"
+cookbook "yad", github: "chefhippie/yad"
 
 cookbook "chef-solo-search", github: "edelight/chef-solo-search"

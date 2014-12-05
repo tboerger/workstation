@@ -26,6 +26,7 @@ run_list(
   "recipe[dropbox]",
   "recipe[lightdm]",
   "recipe[i3]",
+  "recipe[yad]",
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[apps]"
