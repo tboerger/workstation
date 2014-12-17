@@ -27,6 +27,8 @@ run_list(
   "recipe[lightdm]",
   "recipe[i3]",
   "recipe[yad]",
+  "recipe[xrdp]",
+  "recipe[docker]",
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[apps]"
@@ -35,6 +37,9 @@ run_list(
 default_attributes({
   "lightdm" => {
     "xserver" => "X.x11-video-nvidiaG03"
+  },
+  "docker" => {
+    "users" => %w(tboerger)
   },
   "virtualbox" => {
     "users" => %w(tboerger)

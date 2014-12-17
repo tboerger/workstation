@@ -26,12 +26,17 @@ run_list(
   "recipe[lightdm]",
   "recipe[i3]",
   "recipe[yad]",
+  "recipe[xrdp]",
+  "recipe[docker]",
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[apps]"
 )
 
 default_attributes({
+  "docker" => {
+    "users" => %w(tboerger)
+  },
   "virtualbox" => {
     "users" => %w(tboerger)
   },

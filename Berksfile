@@ -80,5 +80,7 @@ cookbook "apt", github: "chefhippie/apt"
 cookbook "apps", github: "chefhippie/apps"
 cookbook "account", github: "chefhippie/account"
 cookbook "yad", github: "chefhippie/yad"
+cookbook "xrdp", github: "chefhippie/xrdp"
 
+cookbook "docker", github: "tboerger/docker"
 cookbook "chef-solo-search", github: "edelight/chef-solo-search"
