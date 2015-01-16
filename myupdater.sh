@@ -11,7 +11,7 @@ if [ $EUID -ne 0 ]; then
 fi
 
 CHEF_DK_URL=https://opscode-omnibus-packages.s3.amazonaws.com
-CHEF_DK_VERSION=${CHEF_DK_VERSION:-0.3.0-1}   
+CHEF_DK_VERSION=${CHEF_DK_VERSION:-0.3.5-1}
 
 echo "Initalizing workstation..."
 echo
