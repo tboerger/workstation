@@ -30,6 +30,7 @@ run_list(
   "recipe[docker]",
   "recipe[mumble]",
   "recipe[nginx]",
+  "recipe[xca]",
   "recipe[apps]"
 )
 
