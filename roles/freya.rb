@@ -1,10 +1,9 @@
 name "freya"
-description "Workstation freya"
+description "Workstation freya.suse.de"
 
 run_list(
   "role[basics]",
-  "recipe[account]",
-  "recipe[users]",
+
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
@@ -20,10 +19,8 @@ run_list(
   "recipe[sublime]",
   "recipe[virtmanager]",
   "recipe[mpd]",
-  "recipe[parcellite]",
   "recipe[x11utils]",
   "recipe[dropbox]",
-  "recipe[lightdm]",
   "recipe[i3]",
   "recipe[yad]",
   "recipe[xrdp]",
@@ -31,10 +28,21 @@ run_list(
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[xca]",
-  "recipe[apps]"
+  "recipe[apps]",
+
+  "recipe[nvidia]"
 )
 
 default_attributes({
+
+
+
+  "lightdm" => {
+    "xserver" => "X.x11-video-nvidiaG03"
+  },
+
+
+
   "docker" => {
     "users" => %w(tboerger)
   },

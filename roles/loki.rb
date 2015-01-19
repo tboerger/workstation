@@ -1,5 +1,5 @@
 name "loki"
-description "Workstation loki"
+description "Workstation loki.webhippie.de"
 
 run_list(
 

@@ -1,10 +1,9 @@
 name "mimir"
-description "Workstation mimir"
+description "Workstation mimir.suse.de"
 
 run_list(
   "role[basics]",
-  "recipe[account]",
-  "recipe[users]",
+  
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
@@ -21,10 +20,8 @@ run_list(
   "recipe[virtmanager]",
   "recipe[mpd]",
   "recipe[nvidia]",
-  "recipe[parcellite]",
   "recipe[x11utils]",
   "recipe[dropbox]",
-  "recipe[lightdm]",
   "recipe[i3]",
   "recipe[yad]",
   "recipe[xrdp]",
@@ -36,9 +33,15 @@ run_list(
 )
 
 default_attributes({
+
+
+
   "lightdm" => {
     "xserver" => "X.x11-video-nvidiaG03"
   },
+
+
+
   "docker" => {
     "users" => %w(tboerger)
   },

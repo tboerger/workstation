@@ -10,75 +10,100 @@ if [ $EUID -ne 0 ]; then
   fi
 fi
 
-CHEF_DK_URL=https://opscode-omnibus-packages.s3.amazonaws.com
-CHEF_DK_VERSION=${CHEF_DK_VERSION:-0.3.5-1}
+if [ -L $0 ]
+then
+  ROOT=$(dirname $(readlink -e $0))
+else
+  if [ $0 == "bash" ]
+  then
+    ROOT="/opt/workstation"
+  else
+    ROOT=$(realpath -e $(dirname $0))
+  fi
+fi
 
-echo "Initalizing workstation..."
-echo
+CHEFDK_URL=${CHEFDK_URL:-https://opscode-omnibus-packages.s3.amazonaws.com}
+CHEFDK_VERSION=${CHEFDK_VERSION:-0.3.5-1}
+
+REPOSITORY_URL=${REPOSITORY_URL:-https://github.com/tboerger/workstation.git}
 
 if [ -f /usr/bin/sw_vers ]
 then
   if [ ! -f /usr/bin/chef-solo ]
   then
-    curl -so /tmp/chefdk.dmg ${CHEF_DK_URL}/mac_os_x/10.8/x86_64/chefdk-${CHEF_DK_VERSION}.dmg
+    echo "--> Install ChefDK"
+    (
+      curl -so /tmp/chefdk.dmg ${CHEFDK_URL}/mac_os_x/10.8/x86_64/chefdk-${CHEFDK_VERSION}.dmg
 
-    hdiutil mount /tmp/chefdk.dmg &> /dev/null
-    installer -pkg /Volumes/Chef\ Development\ Kit/chefdk-${CHEF_DK_VERSION}.pkg -target /
-    hdiutil unmount /Volumes/Chef\ Development\ Kit &> /dev/null
+      hdiutil mount /tmp/chefdk.dmg &> /dev/null
+      installer -pkg /Volumes/Chef\ Development\ Kit/chefdk-${CHEFDK_VERSION}.pkg -target /
+      hdiutil unmount /Volumes/Chef\ Development\ Kit &> /dev/null
+    ) 2>&1 | sed 's/^/    /'
   fi
 fi
 
 if [ -f /etc/SuSE-release ]
 then
-  if [ ! -f /usr/bin/chef-client ]
+  if [ ! -f /usr/bin/chef-solo ]
   then
-    zypper -q in -y ${CHEF_DK_URL}/el/6/x86_64/chefdk-${CHEF_DK_VERSION}.x86_64.rpm
+    echo "--> Install ChefDK"
+    (
+      zypper -q in -y ${CHEFDK_URL}/el/6/x86_64/chefdk-${CHEFDK_VERSION}.x86_64.rpm
+    ) 2>&1 | sed 's/^/    /'
   fi
 
   if [[ ! -f /usr/bin/git ]]
   then
-    zypper -q in -y git-core
+    echo "--> Install Git"
+    (
+      zypper -q in -y git-core
+    ) 2>&1 | sed 's/^/    /'
   fi
 fi
 
-if [ -f /etc/debian_version ]
+if [ -d ${ROOT} ]
 then
-  #if [ ! -f /usr/bin/chef-client ]
-  #then
-
-    #
-    # TODO: Detect debian and download deb package
-    # ${CHEF_DK_URL}/debian/6/x86_64/chefdk_${CHEF_DK_VERSION}_amd64.deb
-    #
-
-    #
-    # TODO: Detect ubuntu and download deb package
-    # ${CHEF_DK_URL}/ubuntu/12.04/x86_64/chefdk_${CHEF_DK_VERSION}_amd64.deb
-    #
-
-    # dpkg -i /tmp/chefdk.deb
-
-  #fi
-
-  [[ ! -f /usr/bin/git ]] && aptitude install -y git-core
-fi
-
-if [ -d /opt/workstation ]
-then
-  cd /opt/workstation && git stash && git pull --force && git submodule update --init --recursive
+  if [ $ROOT == "/opt/workstation" ]
+  then
+    echo "--> Updating workstation"
+    (
+      cd ${ROOT} && git stash && git pull --force && git submodule update --init --recursive
+    ) 2>&1 | sed 's/^/    /'
+  fi
 else
-  git clone https://github.com/tboerger/workstation.git /opt/workstation
-  cd /opt/workstation && git submodule update --init --recursive
+  echo "--> Cloning workstation"
+  (
+    git clone ${REPOSITORY_URL} ${ROOT} && cd ${ROOT} && git submodule update --init --recursive
+  ) 2>&1 | sed 's/^/    /'
 fi
 
-pushd /opt/workstation &> /dev/null
-rm -rf cookbooks Berksfile.lock &> /dev/null
-berks vendor cookbooks
+pushd ${ROOT}/cookbooks &> /dev/null
+
+while read LINE
+do
+  IFS=" " read -ra COOKBOOK <<< "$LINE"
+
+  if [ -d ${COOKBOOK[1]} ]
+  then
+    echo "--> Updating ${COOKBOOK[0]}"
+    (
+      cd ${COOKBOOK[1]} && git stash && git pull --force && git submodule update --init --recursive
+    ) 2>&1 | sed 's/^/    /'
+  else
+    echo "--> Cloning ${COOKBOOK[0]}"
+    (
+      git clone ${COOKBOOK[0]} ${COOKBOOK[1]} && cd ${COOKBOOK[1]} && git submodule update --init --recursive
+    ) 2>&1 | sed 's/^/    /'
+  fi
+done < ${ROOT}/cookbooks.txt
+
 popd &> /dev/null
 
-ln -sf /opt/workstation/mystation.sh /usr/local/bin/mystation
-ln -sf /opt/workstation/myupdater.sh /usr/local/bin/myupdater
+if [ $ROOT == "/opt/workstation" ]
+then
+  ln -sf ${ROOT}/mystation.sh /usr/local/bin/mystation
+  ln -sf ${ROOT}/myupdater.sh /usr/local/bin/myupdater
+fi
 
-echo
-echo "...done!"
-echo "You can provision the workstation with: /usr/local/bin/mystation"
+echo "--> Finished"
+echo "    Please execute the 'mystation' command"

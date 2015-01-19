@@ -3,8 +3,7 @@
   "fqdn": "crowbar.stoney.cloud.suse.de",
   "ipaddress": "192.168.140.10",
   "aliases": [
-    "stoney",
-    "crowbar"
+    "stoney"
   ],
   "available": [
     "mimir.suse.de",
