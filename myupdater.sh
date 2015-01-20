@@ -1,13 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ $EUID -ne 0 ]; then
-  if [ -f /usr/bin/sudo ]; then
-    sudo bash $0
-    exit $!
-  else
-    echo "Please run as root!" 1>&2
-    exit 1
-  fi
+  echo "Please run as root!" 1>&2
+  exit 1
 fi
 
 if [ -L $0 ]
@@ -16,7 +11,7 @@ then
 else
   if [ $0 == "bash" ]
   then
-    ROOT="/opt/workstation"
+    ROOT=${ROOT:-/opt/workstation}
   else
     ROOT=$(realpath -e $(dirname $0))
   fi
@@ -65,45 +60,38 @@ if [ -d ${ROOT} ]
 then
   if [ $ROOT == "/opt/workstation" ]
   then
-    echo "--> Updating workstation"
+    echo "--> Updating itself"
     (
       cd ${ROOT} && git stash && git pull --force && git submodule update --init --recursive
     ) 2>&1 | sed 's/^/    /'
   fi
 else
-  echo "--> Cloning workstation"
+  echo "--> Cloning itself"
   (
     git clone ${REPOSITORY_URL} ${ROOT} && cd ${ROOT} && git submodule update --init --recursive
   ) 2>&1 | sed 's/^/    /'
 fi
 
-pushd ${ROOT}/cookbooks &> /dev/null
-
 while read LINE
 do
   IFS=" " read -ra COOKBOOK <<< "$LINE"
 
-  if [ -d ${COOKBOOK[1]} ]
+  if [ -d ${ROOT}/cookbooks/${COOKBOOK[1]} ]
   then
     echo "--> Updating ${COOKBOOK[0]}"
     (
-      cd ${COOKBOOK[1]} && git stash && git pull --force && git submodule update --init --recursive
+      cd ${ROOT}/cookbooks/${COOKBOOK[1]} && git stash && git pull --force && git submodule update --init --recursive
     ) 2>&1 | sed 's/^/    /'
   else
     echo "--> Cloning ${COOKBOOK[0]}"
     (
-      git clone ${COOKBOOK[0]} ${COOKBOOK[1]} && cd ${COOKBOOK[1]} && git submodule update --init --recursive
+      git clone ${COOKBOOK[0]} ${ROOT}/cookbooks/${COOKBOOK[1]} && cd ${ROOT}/cookbooks/${COOKBOOK[1]} && git submodule update --init --recursive
     ) 2>&1 | sed 's/^/    /'
   fi
 done < ${ROOT}/cookbooks.txt
 
-popd &> /dev/null
-
-if [ $ROOT == "/opt/workstation" ]
-then
-  ln -sf ${ROOT}/mystation.sh /usr/local/bin/mystation
-  ln -sf ${ROOT}/myupdater.sh /usr/local/bin/myupdater
-fi
+ln -sf ${ROOT}/mystation.sh /usr/local/bin/mystation
+ln -sf ${ROOT}/myupdater.sh /usr/local/bin/myupdater
 
 echo "--> Finished"
 echo "    Please execute the 'mystation' command"
