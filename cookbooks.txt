@@ -6,11 +6,15 @@ https://github.com/chefhippie/build.git build
 https://github.com/chefhippie/bundler.git bundler
 https://github.com/chefhippie/centerim.git centerim
 https://github.com/chefhippie/chrome.git chrome
+https://github.com/chefhippie/conky.git conky
 https://github.com/chefhippie/cronlist.git cronlist
 https://github.com/chefhippie/daemontools.git daemontools
 https://github.com/chefhippie/database.git database
+https://github.com/chefhippie/displaymanager.git displaymanager
 https://github.com/chefhippie/dropbox.git dropbox
+https://github.com/chefhippie/dunst.git dunst
 https://github.com/chefhippie/elasticsearch.git elasticsearch
+https://github.com/chefhippie/feh.git feh
 https://github.com/chefhippie/foreman.git foreman
 https://github.com/chefhippie/git.git git
 https://github.com/chefhippie/gitlab.git gitlab
@@ -34,7 +38,6 @@ https://github.com/chefhippie/libvirt.git libvirt
 https://github.com/chefhippie/lightdm.git lightdm
 https://github.com/chefhippie/locales.git locales
 https://github.com/chefhippie/locate.git locate
-https://github.com/chefhippie/lwrpexec.git lwrpexec
 https://github.com/chefhippie/memcached.git memcached
 https://github.com/chefhippie/mongodb.git mongodb
 https://github.com/chefhippie/monit.git monit
@@ -77,6 +80,7 @@ https://github.com/chefhippie/vim.git vim
 https://github.com/chefhippie/virtmanager.git virtmanager
 https://github.com/chefhippie/virtualbox.git virtualbox
 https://github.com/chefhippie/webdev.git webdev
+https://github.com/chefhippie/windowmanager.git windowmanager
 https://github.com/chefhippie/workstation.git workstation
 https://github.com/chefhippie/x11utils.git x11utils
 https://github.com/chefhippie/xca.git xca

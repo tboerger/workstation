@@ -4,6 +4,7 @@ description "Workstation freya.suse.de"
 run_list(
   "role[basics]",
 
+  "recipe[openssl]",
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
@@ -21,6 +22,11 @@ run_list(
   "recipe[mpd]",
   "recipe[x11utils]",
   "recipe[dropbox]",
+  "recipe[feh]",
+  "recipe[conky]",
+  "recipe[dunst]",
+  "recipe[windowmanager]",
+  "recipe[displaymanager]",
   "recipe[i3]",
   "recipe[yad]",
   "recipe[xrdp]",
@@ -28,21 +34,37 @@ run_list(
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[xca]",
-  "recipe[apps]",
-
-  "recipe[nvidia]"
+  "recipe[apps]"
 )
 
 default_attributes({
-
-
-
-  "lightdm" => {
-    "xserver" => "X.x11-video-nvidiaG03"
+  "displaymanager" => {
+    "xserver" => "Xorg"
   },
-
-
-
+  "windowmanager" => {
+    "default_wm" => "i3"
+  },
+  "openssl" => {
+    "organization" => "Thomas Boerger",
+    "unit" => "Hostmaster",
+    "locality" => "Nuremberg",
+    "state" => "Bavaria",
+    "country" => "DE",
+    "email" => "tboerger@suse.de",
+    "expiration" => 1095,
+    "self_signing" => true
+  },
+  "icecream" => {
+    "netname" => "AUTOBUILD",
+    "scheduler_host" => "icecream.suse.de"
+  },
+  "users" => {
+    "castles" => {
+      "tboerger-base" => "tboerger/homeshick-base",
+      "tboerger-linux" => "tboerger/homeshick-linux",
+      "tboerger-suse" => "tboerger/homeshick-suse"
+    }
+  },
   "docker" => {
     "users" => %w(tboerger)
   },
@@ -50,6 +72,13 @@ default_attributes({
     "users" => %w(tboerger)
   },
   "vagrant" => {
+    "plugins" => %w(
+      vagrant-libvirt
+      vagrant-vbguest
+      vagrant-bindfs
+      vagrant-notify
+      sahara
+    ),
     "mapping" => {
       "tboerger" => "/home/tboerger"
     }

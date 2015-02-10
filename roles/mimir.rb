@@ -3,7 +3,8 @@ description "Workstation mimir.suse.de"
 
 run_list(
   "role[basics]",
-  
+
+  "recipe[openssl]",
   "recipe[workstation]",
   "recipe[icecream]",
   "recipe[chrome]",
@@ -19,9 +20,13 @@ run_list(
   "recipe[sublime]",
   "recipe[virtmanager]",
   "recipe[mpd]",
-  "recipe[nvidia]",
   "recipe[x11utils]",
   "recipe[dropbox]",
+  "recipe[feh]",
+  "recipe[conky]",
+  "recipe[dunst]",
+  "recipe[windowmanager]",
+  "recipe[displaymanager]",
   "recipe[i3]",
   "recipe[yad]",
   "recipe[xrdp]",
@@ -29,19 +34,39 @@ run_list(
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[xca]",
-  "recipe[apps]"
+  "recipe[apps]",
+
+  "recipe[nvidia]"
 )
 
 default_attributes({
-
-
-
-  "lightdm" => {
+  "displaymanager" => {
     "xserver" => "X.x11-video-nvidiaG03"
   },
-
-
-
+  "windowmanager" => {
+    "default_wm" => "i3"
+  },
+  "openssl" => {
+    "organization" => "Thomas Boerger",
+    "unit" => "Hostmaster",
+    "locality" => "Nuremberg",
+    "state" => "Bavaria",
+    "country" => "DE",
+    "email" => "tboerger@suse.de",
+    "expiration" => 1095,
+    "self_signing" => true
+  },
+  "icecream" => {
+    "netname" => "AUTOBUILD",
+    "scheduler_host" => "icecream.suse.de"
+  },
+  "users" => {
+    "castles" => {
+      "tboerger-base" => "tboerger/homeshick-base",
+      "tboerger-linux" => "tboerger/homeshick-linux",
+      "tboerger-suse" => "tboerger/homeshick-suse"
+    }
+  },
   "docker" => {
     "users" => %w(tboerger)
   },
@@ -49,6 +74,13 @@ default_attributes({
     "users" => %w(tboerger)
   },
   "vagrant" => {
+    "plugins" => %w(
+      vagrant-libvirt
+      vagrant-vbguest
+      vagrant-bindfs
+      vagrant-notify
+      sahara
+    ),
     "mapping" => {
       "tboerger" => "/home/tboerger"
     }
@@ -67,7 +99,7 @@ default_attributes({
       #   "disks" => [
       #     {
       #       "type" => "file",
-      #       "download" => "http://vagrant.webhippie.de/kvm/ubuntu-12.04-amd64-minimal.qcow2",
+      #       "download" => "http://vagrant.webhippie.de/ubuntu-14.04-0.0.1.qcow2",
       #       "source" => "/var/lib/libvirt/images/build-ubuntu.qcow2",
       #       "target" => "vda"
       #     }
@@ -105,7 +137,7 @@ default_attributes({
       #   "disks" => [
       #     {
       #       "type" => "file",
-      #       "download" => "http://vagrant.webhippie.de/kvm/opensuse-13.1-amd64-minimal.qcow2",
+      #       "download" => "http://vagrant.webhippie.de/opensuse-13.2-0.0.1.qcow2",
       #       "source" => "/var/lib/libvirt/images/build-opensuse.qcow2",
       #       "target" => "vda"
       #     }

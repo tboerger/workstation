@@ -7,7 +7,7 @@ This scripts installs and configures my workstations with the help of chef
 Install
 -------
 
-    wget -q -O - https://raw.github.com/tboerger/workstation/master/myupdater.sh | sudo bash
+    wget -q -O - https://raw.github.com/tboerger/workstation/master/myupdater.sh | bash
 
 
 Provision
