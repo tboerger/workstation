@@ -79,6 +79,11 @@ else
   ) 2>&1 | sed 's/^/    /'
 fi
 
+if [ ! -d ${ROOT}/cookbooks ]
+then
+  mkdir -p ${ROOT}/cookbooks
+fi
+
 while read LINE
 do
   IFS=" " read -ra COOKBOOK <<< "$LINE"
