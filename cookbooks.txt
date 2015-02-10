@@ -17,7 +17,6 @@ https://github.com/chefhippie/elasticsearch.git elasticsearch
 https://github.com/chefhippie/feh.git feh
 https://github.com/chefhippie/foreman.git foreman
 https://github.com/chefhippie/git.git git
-https://github.com/chefhippie/gitlab.git gitlab
 https://github.com/chefhippie/homeshick.git homeshick
 https://github.com/chefhippie/homesick.git homesick
 https://github.com/chefhippie/hosts.git hosts
@@ -31,7 +30,6 @@ https://github.com/chefhippie/jenkins.git jenkins
 https://github.com/chefhippie/kdiff3.git kdiff3
 https://github.com/chefhippie/kernel.git kernel
 https://github.com/chefhippie/kfilebox.git kfilebox
-https://github.com/chefhippie/kolab.git kolab
 https://github.com/chefhippie/kvm.git kvm
 https://github.com/chefhippie/libicu.git libicu
 https://github.com/chefhippie/libvirt.git libvirt
