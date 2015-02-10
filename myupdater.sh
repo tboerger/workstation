@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-if [ $EUID -ne 0 ]; then
-  echo "Please run as root!" 1>&2
-  exit 1
+if [ $EUID -ne 0 ]
+then
+  if [ -f /usr/bin/sudo ]
+  then
+    sudo -E -H $0 $@
+    exit $!
+  else
+    echo "Please run as root!" 1>&2
+    exit 1
+  fi
 fi
 
 if [ -L $0 ]

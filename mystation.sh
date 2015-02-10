@@ -4,7 +4,7 @@ if [ $EUID -ne 0 ]
 then
   if [ -f /usr/bin/sudo ]
   then
-    sudo bash $0
+    sudo -E -H $0 $@
     exit $!
   else
     echo "Please run as root!" 1>&2
@@ -16,9 +16,9 @@ NODE=$(hostname -s)
 
 if [ -L $0 ]
 then
-  ROOT=$(dirname $(readlink $0))
+  ROOT=$(dirname $(readlink -e $0))
 else
-  ROOT=$(dirname $0)
+  ROOT=$(realpath -e $(dirname $0))
 fi
 
 while [ ! -f ${ROOT}/nodes/${NODE}.json ]
