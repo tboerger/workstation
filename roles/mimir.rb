@@ -35,7 +35,6 @@ run_list(
   "recipe[nginx]",
   "recipe[xca]",
   "recipe[apps]",
-  "recipe[multimc]",
 
   "recipe[nvidia]"
 )

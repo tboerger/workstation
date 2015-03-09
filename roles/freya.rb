@@ -34,8 +34,7 @@ run_list(
   "recipe[mumble]",
   "recipe[nginx]",
   "recipe[xca]",
-  "recipe[apps]",
-  "recipe[multimc]"
+  "recipe[apps]"
 )
 
 default_attributes({
