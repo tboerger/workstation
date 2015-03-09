@@ -41,6 +41,7 @@ https://github.com/chefhippie/mongodb.git mongodb
 https://github.com/chefhippie/monit.git monit
 https://github.com/chefhippie/motd.git motd
 https://github.com/chefhippie/mpd.git mpd
+https://github.com/chefhippie/multimc.git multimc
 https://github.com/chefhippie/mumble.git mumble
 https://github.com/chefhippie/mysql.git mysql
 https://github.com/chefhippie/nano.git nano
