@@ -1,0 +1,12 @@
+{
+  "id": "znc",
+  "fqdn": "znc.cloud.suse.de",
+  "ipaddress": "44.0.3.62",
+  "aliases": [
+    "znc"
+  ],
+  "available": [
+    "mimir.suse.de",
+    "freya.suse.de"
+  ]
+}
