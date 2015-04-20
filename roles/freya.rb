@@ -89,6 +89,12 @@ default_attributes({
     "group" => "suse"
   },
   "libvirt" => {
+    "daemon" => {
+      "qemu" => {
+        "vnc_password" => "qayqay",
+        "spice_password" => "qayqay"
+      },
+    },
     "nodes" => {
       # "build-ubuntu" => {
       #   "action" => %w(define),
