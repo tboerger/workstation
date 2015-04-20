@@ -1,7 +1,7 @@
 {
   "id": "znc",
   "fqdn": "znc.cloud.suse.de",
-  "ipaddress": "44.0.3.62",
+  "ipaddress": "10.162.168.51",
   "aliases": [
     "znc"
   ],
