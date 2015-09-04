@@ -19,7 +19,7 @@ run_list(
   "recipe[skype]",
   "recipe[sublime]",
   "recipe[virtmanager]",
-  "recipe[mpd]",
+  # "recipe[mpd]",
   "recipe[x11utils]",
   "recipe[dropbox]",
   "recipe[feh]",
