@@ -50,7 +50,7 @@ then
   then
     echo "--> Install ChefDK"
     (
-      zypper -q in -y ${CHEFDK_URL}/el/7/x86_64/chefdk-${CHEFDK_VERSION}.el7.x86_64.rpm
+      zypper --no-gpg-checks -q in -y ${CHEFDK_URL}/el/7/x86_64/chefdk-${CHEFDK_VERSION}.el7.x86_64.rpm
     ) 2>&1 | sed 's/^/    /'
   fi
 
