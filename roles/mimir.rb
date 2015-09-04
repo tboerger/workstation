@@ -19,7 +19,6 @@ run_list(
   "recipe[skype]",
   "recipe[sublime]",
   "recipe[virtmanager]",
-  # "recipe[mpd]",
   "recipe[x11utils]",
   "recipe[dropbox]",
   "recipe[feh]",
@@ -32,9 +31,7 @@ run_list(
   "recipe[xrdp]",
   "recipe[docker]",
   "recipe[mumble]",
-  "recipe[nginx]",
   "recipe[xca]",
-  "recipe[apps]",
 
   "recipe[nvidia]"
 )

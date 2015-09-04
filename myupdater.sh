@@ -25,7 +25,7 @@ else
 fi
 
 CHEFDK_URL=${CHEFDK_URL:-https://opscode-omnibus-packages.s3.amazonaws.com}
-CHEFDK_VERSION=${CHEFDK_VERSION:-0.3.5-1}
+CHEFDK_VERSION=${CHEFDK_VERSION:-0.7.0-1}
 
 REPOSITORY_URL=${REPOSITORY_URL:-https://github.com/tboerger/workstation.git}
 
