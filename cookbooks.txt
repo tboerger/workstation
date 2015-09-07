@@ -1,5 +1,6 @@
 https://github.com/chefhippie/account.git account
 https://github.com/chefhippie/apt.git apt
+https://github.com/chefhippie/atom.git atom
 https://github.com/chefhippie/backup2l.git backup2l
 https://github.com/chefhippie/build.git build
 https://github.com/chefhippie/bundler.git bundler
