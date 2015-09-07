@@ -31,6 +31,8 @@ run_list(
   "recipe[xrdp]",
   "recipe[docker]",
   "recipe[mumble]",
+  "recipe[multimc]",
+  "recipe[thunderbird]",
   "recipe[xca]",
 
   "recipe[nvidia]"
