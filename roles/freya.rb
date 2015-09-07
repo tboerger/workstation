@@ -89,6 +89,7 @@ default_attributes({
   },
   "libvirt" => {
     "daemon" => {
+      "users" => %w(tboerger),
       "qemu" => {
         "vnc_password" => "qayqay",
         "spice_password" => "qayqay"
