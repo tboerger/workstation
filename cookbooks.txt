@@ -14,6 +14,7 @@ https://github.com/chefhippie/dropbox.git dropbox
 https://github.com/chefhippie/dunst.git dunst
 https://github.com/chefhippie/feh.git feh
 https://github.com/chefhippie/git.git git
+https://github.com/chefhippie/go.git go
 https://github.com/chefhippie/homeshick.git homeshick
 https://github.com/chefhippie/hosts.git hosts
 https://github.com/chefhippie/htop.git htop
@@ -51,6 +52,7 @@ https://github.com/chefhippie/sshkey.git sshkey
 https://github.com/chefhippie/sublime.git sublime
 https://github.com/chefhippie/sudo.git sudo
 https://github.com/chefhippie/sysctl.git sysctl
+https://github.com/chefhippie/terminology.git terminology
 https://github.com/chefhippie/thunderbird.git thunderbird
 https://github.com/chefhippie/timezone.git timezone
 https://github.com/chefhippie/users.git users
