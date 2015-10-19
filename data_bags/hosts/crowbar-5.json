@@ -1,0 +1,12 @@
+{
+  "id": "crowbar-5",
+  "fqdn": "crowbar.l5.cloud.suse.de",
+  "ipaddress": "192.168.105.10",
+  "aliases": [
+    "cloud5"
+  ],
+  "available": [
+    "mimir.suse.de",
+    "freya.suse.de"
+  ]
+}
