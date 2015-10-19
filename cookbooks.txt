@@ -67,5 +67,6 @@ https://github.com/chefhippie/xca.git xca
 https://github.com/chefhippie/xinetd.git xinetd
 https://github.com/chefhippie/xrdp.git xrdp
 https://github.com/chefhippie/yad.git yad
+https://github.com/chefhippie/zeal.git zeal
 https://github.com/chefhippie/zypper.git zypper
 https://github.com/edelight/chef-solo-search chef-solo-search

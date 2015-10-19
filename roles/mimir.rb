@@ -35,6 +35,7 @@ run_list(
   "recipe[thunderbird]",
   "recipe[terminology]",
   "recipe[atom]",
+  "recipe[zeal]",
   "recipe[go]",
   "recipe[xca]",
 
