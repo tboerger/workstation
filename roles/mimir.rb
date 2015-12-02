@@ -34,6 +34,7 @@ run_list(
   "recipe[multimc]",
   "recipe[thunderbird]",
   "recipe[terminology]",
+  "recipe[tilda]",
   "recipe[atom]",
   "recipe[zeal]",
   "recipe[go]",

@@ -33,6 +33,7 @@ run_list(
   "recipe[mumble]",
   "recipe[multimc]",
   "recipe[thunderbird]",
+  "recipe[tilda]",
   "recipe[terminology]",
   "recipe[atom]",
   "recipe[zeal]",

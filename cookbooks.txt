@@ -54,6 +54,7 @@ https://github.com/chefhippie/sudo.git sudo
 https://github.com/chefhippie/sysctl.git sysctl
 https://github.com/chefhippie/terminology.git terminology
 https://github.com/chefhippie/thunderbird.git thunderbird
+https://github.com/chefhippie/tilda.git tilda
 https://github.com/chefhippie/timezone.git timezone
 https://github.com/chefhippie/users.git users
 https://github.com/chefhippie/vagrant.git vagrant
