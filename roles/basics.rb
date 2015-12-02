@@ -19,7 +19,6 @@ run_list(
   "recipe[cronlist]",
   "recipe[sqlite]",
   "recipe[sudo]",
-  "recipe[ntp]",
   "recipe[openssh]",
   "recipe[readline]"
 )
