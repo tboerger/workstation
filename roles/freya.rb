@@ -45,7 +45,7 @@ default_attributes({
     "xserver" => "Xorg"
   },
   "windowmanager" => {
-    "default_wm" => "i3"
+    "default_wm" => "gnome"
   },
   "openssl" => {
     "organization" => "Thomas Boerger",

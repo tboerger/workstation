@@ -47,7 +47,7 @@ default_attributes({
     "xserver" => "X.x11-video-nvidiaG03"
   },
   "windowmanager" => {
-    "default_wm" => "i3"
+    "default_wm" => "gnome"
   },
   "openssl" => {
     "organization" => "Thomas Boerger",
