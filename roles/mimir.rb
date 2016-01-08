@@ -39,6 +39,7 @@ run_list(
   "recipe[zeal]",
   "recipe[go]",
   "recipe[xca]",
+  "recipe[steam]",
 
   "recipe[nvidia]"
 )

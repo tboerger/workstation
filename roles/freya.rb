@@ -38,7 +38,8 @@ run_list(
   "recipe[atom]",
   "recipe[zeal]",
   "recipe[go]",
-  "recipe[xca]"
+  "recipe[xca]",
+  "recipe[steam]"
 )
 
 default_attributes({

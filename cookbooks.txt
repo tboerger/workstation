@@ -49,6 +49,7 @@ https://github.com/chefhippie/screen.git screen
 https://github.com/chefhippie/skype.git skype
 https://github.com/chefhippie/sqlite.git sqlite
 https://github.com/chefhippie/sshkey.git sshkey
+https://github.com/chefhippie/steam.git steam
 https://github.com/chefhippie/sublime.git sublime
 https://github.com/chefhippie/sudo.git sudo
 https://github.com/chefhippie/sysctl.git sysctl
