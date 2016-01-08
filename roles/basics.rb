@@ -32,7 +32,8 @@ default_attributes({
     },
     "castles" => {
       "tboerger-base" => "tboerger/homeshick-base",
-      "tboerger-linux" => "tboerger/homeshick-linux"
+      "tboerger-linux" => "tboerger/homeshick-linux",
+      "tboerger-vim" => "tboerger/homeshick-vim"
     }
   }
 })
