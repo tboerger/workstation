@@ -25,6 +25,7 @@ https://github.com/chefhippie/irssi.git irssi
 https://github.com/chefhippie/java.git java
 https://github.com/chefhippie/kernel.git kernel
 https://github.com/chefhippie/kvm.git kvm
+https://github.com/chefhippie/lame.git lame
 https://github.com/chefhippie/libicu.git libicu
 https://github.com/chefhippie/libvirt.git libvirt
 https://github.com/chefhippie/locales.git locales
@@ -47,6 +48,7 @@ https://github.com/chefhippie/readline.git readline
 https://github.com/chefhippie/ruby.git ruby
 https://github.com/chefhippie/screen.git screen
 https://github.com/chefhippie/skype.git skype
+https://github.com/chefhippie/sound-juicer.git sound-juicer
 https://github.com/chefhippie/sqlite.git sqlite
 https://github.com/chefhippie/sshkey.git sshkey
 https://github.com/chefhippie/steam.git steam

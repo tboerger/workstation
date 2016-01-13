@@ -40,6 +40,8 @@ run_list(
   "recipe[go]",
   "recipe[xca]",
   "recipe[steam]",
+  "recipe[lame]",
+  "recipe[sound-juicer]",
 
   "recipe[nvidia]"
 )
