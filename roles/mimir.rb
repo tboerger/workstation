@@ -42,6 +42,8 @@ run_list(
   "recipe[steam]",
   "recipe[lame]",
   "recipe[sound-juicer]",
+  "recipe[bundler]",
+  "recipe[gem2rpm]",
 
   "recipe[nvidia]"
 )

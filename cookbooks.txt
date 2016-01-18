@@ -13,6 +13,7 @@ https://github.com/chefhippie/docker.git docker
 https://github.com/chefhippie/dropbox.git dropbox
 https://github.com/chefhippie/dunst.git dunst
 https://github.com/chefhippie/feh.git feh
+https://github.com/chefhippie/gem2rpm.git gem2rpm
 https://github.com/chefhippie/git.git git
 https://github.com/chefhippie/go.git go
 https://github.com/chefhippie/homeshick.git homeshick

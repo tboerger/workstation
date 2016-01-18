@@ -41,7 +41,9 @@ run_list(
   "recipe[xca]",
   "recipe[steam]",
   "recipe[lame]",
-  "recipe[sound-juicer]"
+  "recipe[sound-juicer]",
+  "recipe[bundler]",
+  "recipe[gem2rpm]"
 )
 
 default_attributes({
