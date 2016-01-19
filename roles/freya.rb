@@ -37,6 +37,8 @@ run_list(
   "recipe[terminology]",
   "recipe[atom]",
   "recipe[zeal]",
+  "recipe[tmux]",
+  "recipe[tmuxinator]",
   "recipe[go]",
   "recipe[xca]",
   "recipe[steam]",

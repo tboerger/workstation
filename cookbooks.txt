@@ -60,6 +60,8 @@ https://github.com/chefhippie/terminology.git terminology
 https://github.com/chefhippie/thunderbird.git thunderbird
 https://github.com/chefhippie/tilda.git tilda
 https://github.com/chefhippie/timezone.git timezone
+https://github.com/chefhippie/tmux.git tmux
+https://github.com/chefhippie/tmuxinator.git tmuxinator
 https://github.com/chefhippie/users.git users
 https://github.com/chefhippie/vagrant.git vagrant
 https://github.com/chefhippie/vim.git vim
