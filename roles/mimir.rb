@@ -11,6 +11,7 @@ run_list(
   "recipe[irssi]",
   "recipe[pidgin]",
   "recipe[osc]",
+  "recipe[ntp]",
   "recipe[kvm]",
   "recipe[libvirt]",
   "recipe[virtualbox]",
