@@ -111,86 +111,71 @@ default_attributes({
         "spice_password" => "qayqay"
       },
     },
+    "networks" => {
+      "general" => {
+        "action" => %w(define start autoboot),
+        "mac" => "52:54:00:AB:B1:77",
+        "bridge" => "general0",
+        "ip" => "192.168.124.1",
+        "netmask" => "255.255.255.0",
+        "dhcp_enable" => true,
+        "dhcp_hosts" => [
+          {
+            "mac" => "52:54:00:77:77:70",
+            "name" => "opensuse-13-1",
+            "ip" => "192.168.124.10"
+          },
+          {
+            "mac" => "52:54:00:77:77:71",
+            "name" => "opensuse-13-2",
+            "ip" => "192.168.124.20"
+          }
+        ]
+      }
+    },
     "nodes" => {
-      # "build-ubuntu" => {
-      #   "action" => %w(define),
-      #   "memory" => 2048,
-      #   "cpus" => 8,
-      #   "disks" => [
-      #     {
-      #       "type" => "file",
-      #       "download" => "http://vagrant.webhippie.de/ubuntu-14.04-0.0.1.qcow2",
-      #       "source" => "/var/lib/libvirt/images/build-ubuntu.qcow2",
-      #       "target" => "vda"
-      #     }
-      #   ],
-      #   "interfaces" => [
-      #     {
-      #       "type" => "network",
-      #       "source" => "default"
-      #     }
-      #   ]
-      # },
-      # "build-ubuntu-test" => {
-      #   "action" => %w(define),
-      #   "memory" => 2048,
-      #   "cpus" => 8,
-      #   "disks" => [
-      #     {
-      #       "type" => "file",
-      #       "source" => "/var/lib/libvirt/images/build-ubuntu-test.qcow2",
-      #       "target" => "vda"
-      #     }
-      #   ],
-      #   "interfaces" => [
-      #     {
-      #       "type" => "network",
-      #       "source" => "default"
-      #     }
-      #   ]
-      # },
-
-      # "build-opensuse" => {
-      #   "action" => %w(define),
-      #   "memory" => 2048,
-      #   "cpus" => 8,
-      #   "disks" => [
-      #     {
-      #       "type" => "file",
-      #       "download" => "http://vagrant.webhippie.de/opensuse-13.2-0.0.1.qcow2",
-      #       "source" => "/var/lib/libvirt/images/build-opensuse.qcow2",
-      #       "target" => "vda"
-      #     }
-      #   ],
-      #   "interfaces" => [
-      #     {
-      #       "type" => "network",
-      #       "source" => "default"
-      #     }
-      #   ]
-      # },
-      # "build-opensuse-test" => {
-      #   "action" => %w(define),
-      #   "memory" => 2048,
-      #   "cpus" => 8,
-      #   "disks" => [
-      #     {
-      #       "type" => "file",
-      #       "source" => "/var/lib/libvirt/images/build-opensuse-test.qcow2",
-      #       "target" => "vda"
-      #     }
-      #   ],
-      #   "interfaces" => [
-      #     {
-      #       "type" => "network",
-      #       "source" => "default"
-      #     }
-      #   ]
-      # }
+      "opensuse-13.1" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 4,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://vagrant.webhippie.de/opensuse-13.1-0.0.1.qcow2",
+            "source" => "/var/lib/libvirt/images/opensuse-13.1.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "general",
+            "mac" => "52:54:00:77:77:70"
+          }
+        ]
+      },
+      "opensuse-13.2" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 4,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://vagrant.webhippie.de/opensuse-13.2-0.0.1.qcow2",
+            "source" => "/var/lib/libvirt/images/opensuse-13.2.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "general",
+            "mac" => "52:54:00:77:77:71"
+          }
+        ]
+      }
     }
   }
 })
 
-override_attributes({
-
-})
+override_attributes({})
