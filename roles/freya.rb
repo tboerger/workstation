@@ -113,7 +113,7 @@ default_attributes({
       "general" => {
         "action" => %w(define start autoboot),
         "mac" => "52:54:00:AB:B1:77",
-        "bridge" => "general0",
+        "bridge" => "virbr1",
         "ip" => "192.168.124.1",
         "netmask" => "255.255.255.0",
         "dhcp_enable" => true,
