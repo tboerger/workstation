@@ -24,8 +24,8 @@ else
   fi
 fi
 
-CHEFDK_URL=${CHEFDK_URL:-https://opscode-omnibus-packages.s3.amazonaws.com}
-CHEFDK_VERSION=${CHEFDK_VERSION:-0.10.0-1}
+CHEFDK_URL=${CHEFDK_URL:-https://packages.chef.io/stable}
+CHEFDK_VERSION=${CHEFDK_VERSION:-0.14.25-1}
 
 REPOSITORY_URL=${REPOSITORY_URL:-https://github.com/tboerger/workstation.git}
 
@@ -35,7 +35,7 @@ then
   then
     echo "--> Install ChefDK"
     (
-      curl -so /tmp/chefdk.dmg ${CHEFDK_URL}/mac_os_x/10.8/x86_64/chefdk-${CHEFDK_VERSION}.dmg
+      curl -so /tmp/chefdk.dmg ${CHEFDK_URL}/mac_os_x/10.11/chefdk-${CHEFDK_VERSION}.dmg
 
       hdiutil mount /tmp/chefdk.dmg &> /dev/null
       installer -pkg /Volumes/Chef\ Development\ Kit/chefdk-${CHEFDK_VERSION}.pkg -target /
@@ -50,7 +50,7 @@ then
   then
     echo "--> Install ChefDK"
     (
-      zypper --no-gpg-checks -q in -y ${CHEFDK_URL}/el/7/x86_64/chefdk-${CHEFDK_VERSION}.el7.x86_64.rpm
+      zypper --no-gpg-checks -q in -y ${CHEFDK_URL}/el/7/chefdk-${CHEFDK_VERSION}.el7.x86_64.rpm
     ) 2>&1 | sed 's/^/    /'
   fi
 
