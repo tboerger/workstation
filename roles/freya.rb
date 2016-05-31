@@ -110,14 +110,14 @@ default_attributes({
       },
     },
     "mappings" => {
-      "opensuse-13.1" => {
+      "opensuse-13_1" => {
         "interface" => "virbr1",
         "ip" => "192.168.124.10",
         "tcp" => [
           [22131, 22]
         ]
       },
-      "opensuse-13.2" => {
+      "opensuse-13_2" => {
         "interface" => "virbr1",
         "ip" => "192.168.124.20",
         "tcp" => [
