@@ -111,6 +111,22 @@ default_attributes({
         "spice_password" => "qayqay"
       },
     },
+    "mappings" => {
+      "opensuse-13.1" => {
+        "interface" => "virbr1",
+        "ip" => "192.168.124.10",
+        "tcp" => [
+          [22131, 22]
+        ]
+      },
+      "opensuse-13.2" => {
+        "interface" => "virbr1",
+        "ip" => "192.168.124.20",
+        "tcp" => [
+          [22132, 22]
+        ]
+      }
+    },
     "networks" => {
       "general" => {
         "action" => %w(define start autoboot),
