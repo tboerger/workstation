@@ -47,6 +47,7 @@ run_list(
   "recipe[sound-juicer]",
   "recipe[bundler]",
   "recipe[gem2rpm]"
+  "recipe[telegram]"
 )
 
 default_attributes({

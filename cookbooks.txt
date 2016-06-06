@@ -56,6 +56,7 @@ https://github.com/chefhippie/steam.git steam
 https://github.com/chefhippie/sublime.git sublime
 https://github.com/chefhippie/sudo.git sudo
 https://github.com/chefhippie/sysctl.git sysctl
+https://github.com/chefhippie/telegram.git telegram
 https://github.com/chefhippie/terminology.git terminology
 https://github.com/chefhippie/thunderbird.git thunderbird
 https://github.com/chefhippie/tilda.git tilda
