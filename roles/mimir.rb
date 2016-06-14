@@ -134,7 +134,7 @@ default_attributes({
         "mac" => "52:54:00:AB:B1:77",
         "bridge" => "virbr1",
         "ip" => "192.168.124.1",
-        "netmask" => "255.255.255.0",
+        "netmask" => "255.255.0.0",
         "dhcp_enable" => true,
         "dhcp_hosts" => [
           {
@@ -146,7 +146,18 @@ default_attributes({
             "mac" => "52:54:00:77:77:71",
             "name" => "opensuse-13-2",
             "ip" => "192.168.124.20"
+          },
+          {
+            "mac" => "52:54:00:77:77:80",
+            "name" => "sles-12-0",
+            "ip" => "192.168.125.10"
+          },
+          {
+            "mac" => "52:54:00:77:77:81",
+            "name" => "sles-12-1",
+            "ip" => "192.168.125.20"
           }
+
         ]
       }
     },
@@ -188,6 +199,46 @@ default_attributes({
             "type" => "network",
             "source" => "general",
             "mac" => "52:54:00:77:77:71"
+          }
+        ]
+      },
+      "sles-12.0" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 4,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://clouddata.cloud.suse.de/images/SLES12.qcow2",
+            "source" => "/var/lib/libvirt/images/sles-12.0.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "general",
+            "mac" => "52:54:00:77:77:80"
+          }
+        ]
+      },
+      "sles-12.1" => {
+        "action" => %w(define),
+        "memory" => 2048,
+        "cpus" => 4,
+        "disks" => [
+          {
+            "type" => "file",
+            "download" => "http://clouddata.cloud.suse.de/images/SLES12-SP1.qcow2",
+            "source" => "/var/lib/libvirt/images/sles-12.1.qcow2",
+            "target" => "vda"
+          }
+        ],
+        "interfaces" => [
+          {
+            "type" => "network",
+            "source" => "general",
+            "mac" => "52:54:00:77:77:81"
           }
         ]
       }
