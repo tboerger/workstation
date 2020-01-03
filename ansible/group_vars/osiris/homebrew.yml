@@ -1,0 +1,72 @@
+# Standards: 0.1
+---
+homebrew_user: thomas
+homebrew_group: staff
+
+homebrew_packages:
+  - bash
+  - bash-completion
+  - cfssl
+  - coreutils
+  - curl
+  - direnv
+  - dnsmasq
+  - drone-cli
+  - fzf
+  - ghi
+  - ghq
+  - gist
+  - git
+  - gnu-getopt
+  - gnu-sed
+  - gnu-tar
+  - gnupg
+  - go
+  - gomplate
+  - gopass
+  - graphviz
+  - grep
+  - hcloud
+  - htop
+  - httpie
+  - hub
+  - ipcalc
+  - jq
+  - jsonnet
+  - kubernetes-cli
+  - m-cli
+  - minio-mc
+  - mkcert
+  - mysql
+  - ncdu
+  - netcat
+  - nmap
+  - node
+  - openshift-cli
+  - pinentry-mac
+  - pwgen
+  - qemu
+  - rsync
+  - ruby
+  - rust
+  - scw
+  - shellcheck
+  - socat
+  - sqlite
+  - stern
+  - telnet
+  - the_platinum_searcher
+  - tmux
+  - tree
+  - vault
+  - vim
+  - visionmedia-watch
+  - wget
+  - wireguard-tools
+  - xhyve
+  - xz
+  - yarn
+  - packer
+  - terraform
+
+...

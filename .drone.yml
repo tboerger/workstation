@@ -1,0 +1,22 @@
+---
+kind: pipeline
+name: check
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: later
+  image: toolhippie/ansible-later:latest
+  pull: always
+  commands:
+    - ansible-later
+
+trigger:
+  ref:
+  - refs/heads/master
+  - refs/tags/**
+  - refs/pull/**
+
+...
