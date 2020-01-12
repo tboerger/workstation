@@ -86,6 +86,9 @@
 - src: https://github.com/machippie/root
   scm: git
   version: master
+- src: https://github.com/machippie/ruby
+  scm: git
+  version: master
 - src: https://github.com/machippie/scratch
   scm: git
   version: master
