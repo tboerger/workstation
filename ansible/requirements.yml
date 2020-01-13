@@ -44,6 +44,9 @@
 - src: https://github.com/machippie/google-chrome
   scm: git
   version: master
+- src: https://github.com/machippie/hammerspoon
+  scm: git
+  version: master
 - src: https://github.com/machippie/homebrew
   scm: git
   version: master
