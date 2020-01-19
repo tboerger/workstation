@@ -5,6 +5,7 @@ homebrew_group: staff
 
 homebrew_taps:
   - homebrew/cask-fonts
+  - webhippie/webhippie
 
 homebrew_casks:
   - font-anonymice-powerline               
@@ -60,7 +61,8 @@ homebrew_packages:
   - jq
   - jsonnet
   - kubernetes-cli
-  - m-cli
+  - m-cl
+  - mcrcon
   - minio-mc
   - mkcert
   - mysql
