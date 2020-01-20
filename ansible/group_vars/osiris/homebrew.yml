@@ -8,6 +8,7 @@ homebrew_taps:
   - webhippie/webhippie
 
 homebrew_casks:
+  - adobe-acrobat-reader
   - font-anonymice-powerline               
   - font-inconsolata-dz-for-powerline      
   - font-menlo-for-powerline               
