@@ -32,6 +32,7 @@ homebrew_packages:
   - autojump
   - bash
   - bash-completion
+  - boilr
   - cfssl
   - coreutils
   - curl
