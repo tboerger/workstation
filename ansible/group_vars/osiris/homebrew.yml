@@ -45,6 +45,7 @@ homebrew_packages:
   - ghq
   - gist
   - git
+  - git-plus
   - gnu-getopt
   - gnu-sed
   - gnu-tar
@@ -70,6 +71,7 @@ homebrew_packages:
   - mysql
   - ncdu
   - netcat
+  - ngrok
   - nmap
   - node
   - openshift-cli
