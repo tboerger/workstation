@@ -2,7 +2,6 @@
 repository:
   name: workstation
   description: Provisioning scripts for my workstations
-  homepage: https://machippie.github.io/finder/
   topics: ansible, playbook, workstation
 
   private: false
