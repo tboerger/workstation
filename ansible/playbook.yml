@@ -40,6 +40,8 @@
     - tunnelblick
     - spotify
     - gimp
+    - imusic
+    # - android-file-transfer
 
 - hosts: maat
   roles:
@@ -81,6 +83,8 @@
     - tunnelblick
     - spotify
     - gimp
+    - imusic
+    # - android-file-transfer
 
 - hosts: osiris
   roles:
@@ -123,6 +127,8 @@
     - tunnelblick
     - spotify
     - gimp
+    - imusic
+    # - android-file-transfer
 
     - docker
     - sublime-text
@@ -133,14 +139,14 @@
     - gitter
     - rocketchat
     - mattermost
+    - bill
+    - clockify
 
-    # - android-filte-transfer
     # - virtualbox
     # - vagrant
     # - sloth
     # - ngrok
     # - keybase
-    # - hubstuff
     # - gpg-suite
     # - fonts
     # - cyberduck

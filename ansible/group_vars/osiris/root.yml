@@ -9,6 +9,6 @@ root_sshkeys:
 
 root_castles:
   - tboerger/homeshick-base
-  - tboerger/homeshick-osx
+  - tboerger/homeshick-macos
 
 ...

@@ -11,7 +11,13 @@
 - src: https://github.com/machippie/bartender
   scm: git
   version: master
+- src: https://github.com/machippie/bill
+  scm: git
+  version: master
 - src: https://github.com/machippie/buttercup
+  scm: git
+  version: master
+- src: https://github.com/machippie/clockify
   scm: git
   version: master
 - src: https://github.com/machippie/code
@@ -51,6 +57,9 @@
   scm: git
   version: master
 - src: https://github.com/machippie/input
+  scm: git
+  version: master
+- src: https://github.com/machippie/imusic
   scm: git
   version: master
 - src: https://github.com/machippie/istat-menus

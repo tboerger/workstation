@@ -6,7 +6,7 @@ users:
     shell: /bin/bash
     castles:
       - tboerger/homeshick-base
-      - tboerger/homeshick-osx
+      - tboerger/homeshick-macos
     groups:
       - admin
     sshkeys:

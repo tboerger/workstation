@@ -6,7 +6,7 @@ users:
     shell: /bin/zsh
     castles:
       - tboerger/homeshick-base
-      - tboerger/homeshick-osx
+      - tboerger/homeshick-macos
       - tboerger/homeshick-private
     groups:
       - admin
