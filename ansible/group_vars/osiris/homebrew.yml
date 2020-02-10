@@ -6,6 +6,7 @@ homebrew_group: staff
 homebrew_taps:
   - homebrew/cask-fonts
   - webhippie/webhippie
+  - webhippie/casks
 
 homebrew_casks:
   - adobe-acrobat-reader
@@ -28,6 +29,8 @@ homebrew_casks:
   - font-liberation-mono-for-powerline
   - font-powerline-symbols
   - ngrok
+  - balenaetcher
+  - anka-build
 
 homebrew_packages:
   - autojump
