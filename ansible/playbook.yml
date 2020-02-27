@@ -1,5 +1,48 @@
 # Standards: 0.1
 ---
+- hosts: maat
+  roles:
+    - spctl
+    - sudo
+    - root
+    - users
+    - cronic
+    - homebrew
+    - mas
+    - system
+    - finder
+    - input
+    - dock
+    - screencapture
+    - screensaver
+    - textedit
+    - ruby
+    - hammerspoon
+    - keepingyouawake
+    - appcleaner
+    - bartender
+    - iterm2
+    - buttercup
+    - java
+    - discord
+    - skype
+    - twitch
+    - google-chrome
+    - firefox
+    - istat-menus
+    - owncloud
+    - spectacle
+    - alfred
+    - microsoft-office
+    - multimc
+    - steam
+    - scratch
+    - tunnelblick
+    - spotify
+    - gimp
+    - imusic
+    # - android-file-transfer
+
 - hosts: hathor
   roles:
     - spctl
@@ -43,48 +86,7 @@
     - imusic
     # - android-file-transfer
 
-- hosts: maat
-  roles:
-    - spctl
-    - sudo
-    - root
-    - users
-    - cronic
-    - homebrew
-    - mas
-    - system
-    - finder
-    - input
-    - dock
-    - screencapture
-    - screensaver
-    - textedit
-    - ruby
-    - hammerspoon
-    - keepingyouawake
-    - appcleaner
-    - bartender
-    - iterm2
-    - buttercup
-    - java
-    - discord
-    - skype
-    - twitch
-    - google-chrome
-    - firefox
-    - istat-menus
-    - owncloud
-    - spectacle
-    - alfred
-    - microsoft-office
-    - multimc
-    - steam
-    - scratch
-    - tunnelblick
-    - spotify
-    - gimp
-    - imusic
-    # - android-file-transfer
+    - clockify
 
 - hosts: osiris
   roles:
