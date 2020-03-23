@@ -1,7 +1,7 @@
 # Standards: 0.1
 ---
-homebrew_user: thomas
-homebrew_group: staff
+homebrew_user: detbo
+homebrew_group: 1008259851
 
 homebrew_taps:
   - homebrew/cask-fonts
