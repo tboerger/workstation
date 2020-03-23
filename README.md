@@ -6,8 +6,6 @@ Provisioning for some of my workstations based on [Ansible](https://www.ansible.
 
 ## Prepare
 
-To be able to use these scripts you got to allow the terminal app (or the terminal you are using while bootstrapping) full disk access within the security and privacy settings. Open the `System Preferences`, head to `Security & Privacy` into the `Privacy` tab, scroll down to `Full Disk Access` and drag your terminal application into the listing.
-
 ```console
 curl -sSLo- https://raw.github.com/tboerger/workstation/master/bin/bootstrap | bash
 echo "secure-vault-password" >| $HOME/.workstation/.vaultpasswd
