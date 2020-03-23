@@ -1,7 +1,5 @@
 # Standards: 0.1
 ---
-root_password: "{{ lookup('file', 'secrets/osiris/root_password.txt') }}"
-
 root_shell: /bin/zsh
 
 root_sshkeys:
