@@ -5,10 +5,6 @@ mas_password: "{{ lookup('file', 'secrets/maat/mas_password.txt') }}"
 
 mas_upgrade: True
 
-mas_install_apps:
-  - name: CloudApp
-    id: 417602904
-
 mas_remove_apps:
   - name: Pages
     id: 409201541
@@ -16,5 +12,7 @@ mas_remove_apps:
     id: 409183694
   - name: Numbers
     id: 409203825
+  - name: CloudApp
+    id: 417602904
 
 ...

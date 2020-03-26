@@ -104,9 +104,6 @@
 - src: https://github.com/machippie/mattermost
   scm: git
   version: master
-- src: https://github.com/machippie/multimc
-  scm: git
-  version: master
 - src: https://github.com/machippie/ngrok
   scm: git
   version: master
