@@ -9,14 +9,16 @@
     - cronic
     - homebrew
     - mas
-    # - system
-    # - finder
-    # - input
-    # - dock
-    # - screencapture
-    # - screensaver
-    # - textedit
+    - system
+    - finder
+    - input
+    - dock
+    - screencapture
+    - screensaver
+    - textedit
+    - fonts
     - ruby
+    - python
     - hammerspoon
     - keepingyouawake
     - appcleaner
@@ -38,11 +40,10 @@
     - spotify
     - gimp
     - imusic
-
-    # - android-file-transfer
+    - android-file-transfer
+    - acrobat-reader
+    - onlyoffice
     - scratch
-    - tunnelblick
-    - microsoft-office
 
 - hosts: hathor
   roles:
@@ -53,14 +54,16 @@
     - cronic
     - homebrew
     - mas
-    # - system
-    # - finder
-    # - input
-    # - dock
-    # - screencapture
-    # - screensaver
-    # - textedit
+    - system
+    - finder
+    - input
+    - dock
+    - screencapture
+    - screensaver
+    - textedit
+    - fonts
     - ruby
+    - python
     - hammerspoon
     - keepingyouawake
     - appcleaner
@@ -82,12 +85,11 @@
     - spotify
     - gimp
     - imusic
-
-    # - android-file-transfer
-    - clockify
+    - android-file-transfer
+    - acrobat-reader
     - scratch
-    - tunnelblick
-    - microsoft-office
+    - onlyoffice
+    - clockify
 
 - hosts: osiris
   roles:
@@ -98,14 +100,16 @@
     - cronic
     - homebrew
     - mas
-    # - system
-    # - finder
-    # - input
-    # - dock
-    # - screencapture
-    # - screensaver
-    # - textedit
+    - system
+    - finder
+    - input
+    - dock
+    - screencapture
+    - screensaver
+    - textedit
+    - fonts
     - ruby
+    - python
     - hammerspoon
     - keepingyouawake
     - appcleaner
@@ -127,28 +131,26 @@
     - spotify
     - gimp
     - imusic
-
-    # - android-file-transfer
+    - android-file-transfer
+    - acrobat-reader
     - clockify
     - docker
     - sublime-text
     - code
     - riot
-    - telegram
     - slack
     - gitter
     - rocketchat
     - mattermost
-    # - vmware-fusion
-    # - virtualbox
-    # - vagrant
-    # - sloth
-    # - ngrok
-    # - keybase
-    # - gpg-suite
-    # - fonts
-    # - cyberduck
-    # - chicken
-    # - xscope
+    - sloth
+    - ngrok
+    - keybase
+    - gpg-suite
+    - cyberduck
+    - xscope
+    - etcher
+    - asdf
+    - virtualbox
+    - vagrant
 
 ...

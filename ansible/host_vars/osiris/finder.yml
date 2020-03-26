@@ -1,7 +1,7 @@
 # Standards: 0.1
 ---
 finder_folders:
-  - /Users/thomas/Developer
+  - /Users/detbo/Developer
 
 finder_favorites:
   - name: Home
@@ -16,7 +16,5 @@ finder_favorites:
     path: "file:///Users/{{ finder_user }}/Developer"
   - name: ownCloud
     path: "file:///Users/{{ finder_user }}/ownCloud"
-  - name: Company
-    path: "file:///Users/{{ finder_user }}/Company"
 
 ...

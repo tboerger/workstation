@@ -1,0 +1,32 @@
+# Standards: 0.1
+---
+mas_email: "{{ lookup('file', 'secrets/osiris/mas_email.txt') }}"
+mas_password: "{{ lookup('file', 'secrets/osiris/mas_password.txt') }}"
+
+mas_upgrade: True
+
+mas_install_apps:
+  - name: com.linebreak.CloudAppMacOSX
+    id: 417602904
+  - name: Navicat Premium Essentials
+    id: 466416967
+  - name: Microsoft Remote Desktop
+    id: 1295203466
+  - name: Telegram
+    id: 747648890
+  - name: WhatsApp
+    id: 1147396723
+
+mas_remove_apps:
+  - name: GarageBand
+    id: 682658836
+  - name: iMovie
+    id: 408981434
+  - name: Pages
+    id: 409201541
+  - name: Keynote
+    id: 409183694
+  - name: Numbers
+    id: 409203825
+
+...
