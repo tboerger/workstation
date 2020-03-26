@@ -3,4 +3,38 @@
 homebrew_user: anna
 homebrew_group: staff
 
+homebrew_packages:
+  - autojump
+  - bash
+  - bash-completion
+  - coreutils
+  - curl
+  - fd
+  - fzf
+  - git
+  - git-plus
+  - gnu-getopt
+  - gnu-sed
+  - gnu-tar
+  - gnupg
+  - grep
+  - htop
+  - m-cli
+  - ncdu
+  - netcat
+  - nmap
+  - pinentry-mac
+  - ripgrep
+  - rsync
+  - socat
+  - telnet
+  - thefuck
+  - the_platinum_searcher
+  - tmux
+  - tree
+  - vim
+  - visionmedia-watch
+  - wget
+  - xz
+
 ...
