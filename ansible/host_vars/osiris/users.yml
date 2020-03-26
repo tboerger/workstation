@@ -4,6 +4,7 @@
 #   - name: thomas
 #     primary_group: staff
 #     shell: /bin/zsh
+#     ohmyzsh: True
 #     castles:
 #       - tboerger/homeshick-base
 #       - tboerger/homeshick-macos
