@@ -7,6 +7,9 @@ homebrew_taps:
   - webhippie/webhippie
   - webhippie/casks
 
+homebrew_casks:
+  - multipass
+
 homebrew_packages:
   - autojump
   - bash
@@ -60,6 +63,7 @@ homebrew_packages:
   - ruby
   - scw
   - shellcheck
+  - snapcraft
   - socat
   - sqlite
   - stern
