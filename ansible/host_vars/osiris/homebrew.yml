@@ -9,6 +9,10 @@ homebrew_taps:
 
 homebrew_casks:
   - multipass
+  - mumble
+  - tunnelblick
+  - skype-for-business
+  - swiftdefaultappsprefpane
 
 homebrew_packages:
   - autojump
@@ -28,6 +32,7 @@ homebrew_packages:
   - gist
   - git
   - git-plus
+  - gitlab-runner
   - gnu-getopt
   - gnu-sed
   - gnu-tar
@@ -43,6 +48,7 @@ homebrew_packages:
   - hub
   - hugo
   - ipcalc
+  - irssi
   - jq
   - jsonnet
   - kubernetes-cli
@@ -72,6 +78,7 @@ homebrew_packages:
   - the_platinum_searcher
   - tmux
   - tree
+  - upx
   - vault
   - vim
   - visionmedia-watch
@@ -80,6 +87,7 @@ homebrew_packages:
   - xhyve
   - xz
   - yarn
+  - yq
   - packer
   - terraform
 
