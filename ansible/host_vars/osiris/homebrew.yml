@@ -6,6 +6,7 @@ homebrew_group: 1008259851
 homebrew_taps:
   - webhippie/webhippie
   - webhippie/casks
+  - homebrew/cask-drivers
 
 homebrew_casks:
   - multipass
@@ -13,6 +14,7 @@ homebrew_casks:
   - tunnelblick
   - skype-for-business
   - swiftdefaultappsprefpane
+  - jabra-direct
 
 homebrew_packages:
   - autojump
@@ -40,6 +42,7 @@ homebrew_packages:
   - go
   - gomplate
   - gopass
+  - govc
   - graphviz
   - grep
   - hcloud

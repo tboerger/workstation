@@ -2,5 +2,6 @@
 ---
 python_user_packages:
   - ansible-later
+  - vcd-cli
 
 ...
