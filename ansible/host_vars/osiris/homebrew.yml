@@ -15,6 +15,7 @@ homebrew_casks:
   - skype-for-business
   - swiftdefaultappsprefpane
   - jabra-direct
+  - macdown
 
 homebrew_packages:
   - autojump
