@@ -16,6 +16,7 @@ homebrew_casks:
   - swiftdefaultappsprefpane
   - jabra-direct
   - macdown
+  - yed
 
 homebrew_packages:
   - autojump
