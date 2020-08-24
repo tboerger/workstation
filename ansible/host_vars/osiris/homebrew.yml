@@ -17,6 +17,8 @@ homebrew_casks:
   - jabra-direct
   - macdown
   - yed
+  - zoomus
+  - battle-net
 
 homebrew_packages:
   - autojump
